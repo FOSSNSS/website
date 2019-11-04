@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `FOSS NSS| Free and Open Source Software Cell of NSSCE`,
+    title: `FOSS NSS | Free and Open Source Software Cell of NSSCE`,
     description: `Free and Open Source Software Cell of NSS College of Engineering, Palakkad`,
     author: `@fossadmin`,
   },
@@ -14,6 +14,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
