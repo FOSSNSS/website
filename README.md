@@ -79,9 +79,9 @@ _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This
 
   
 
-Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+Open the `fossnss`(or whatever you have named) directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-  
+Before helping us by pushing changes, make sure to not to break things 😜 
 
 ## 🧐 What's inside?
 
