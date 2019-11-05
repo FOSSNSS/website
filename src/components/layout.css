@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -68,6 +69,7 @@ mark {
   color: #000;
 }
 small {
+  font-family: 'Roboto', sans-serif;
   font-size: 80%;
 }
 sub,
