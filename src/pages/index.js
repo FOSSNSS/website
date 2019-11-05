@@ -14,7 +14,11 @@ const IndexPage = () => (
     <p>This site is preparing for something :)</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
     </div>
-    <Link to="/index2/">Development Page</Link>
+    <Link to="/index2/">Another Page</Link>
+    <br />
+    <Link to="/blog/">Blog</Link>
+    <br />
+    <Link to="/events/">Events</Link>
   </div>
 )
 
