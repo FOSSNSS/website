@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 
 import SEO from "../components/seo"
 
+import "../components/home/home.scss"
+
 const IndexPage = () => (
   <div>
     <SEO title="Home" />
