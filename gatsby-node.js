@@ -1,12 +1,12 @@
-// 
+//
 
-const path = require('path')
+const path = require("path")
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
-  const blogTemplate = path.resolve('src/templates/blogTemplate.js')
-  const eventTemplate = path.resolve('src/templates/eventTemplate.js')
+  const blogTemplate = path.resolve("src/templates/blogTemplate.js")
+  const eventTemplate = path.resolve("src/templates/eventTemplate.js")
 
   return graphql(
     `
