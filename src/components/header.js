@@ -4,31 +4,28 @@ import React, { Component } from "react"
 class Header extends Component {
   constructor(props) {
     super(props)
-    this.state = { 
-		isToggleOn: true,
-		toggleClassName: 'nav-links'
-	 }
+    this.state = {
+      isToggleOn: true,
+      toggleClassName: "nav-links",
+    }
 
     // This binding is necessary to make `this` work in the callback
     this.toggleClass = this.toggleClass.bind(this)
   }
 
   toggleClass() {
-	  if(!this.state.isToggleOn){
-		this.setState(state => ({
-			isToggleOn: !state.isToggleOn,
-			toggleClassName: `nav-links`
-		  })
-	)
-} else{
-		this.setState(state => ({
-			isToggleOn: !state.isToggleOn,
-			toggleClassName: `nav-links nav-active`
-		  })
-	)
-	}
+    if (!this.state.isToggleOn) {
+      this.setState(state => ({
+        isToggleOn: !state.isToggleOn,
+        toggleClassName: `nav-links`,
+      }))
+    } else {
+      this.setState(state => ({
+        isToggleOn: !state.isToggleOn,
+        toggleClassName: `nav-links nav-active`,
+      }))
+    }
   }
-
 
   render() {
     return (
@@ -36,19 +33,19 @@ class Header extends Component {
         <div className="logo">FOSS NSS</div>
         <ul className={this.state.toggleClassName}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" activeClassName="active-link">Home</Link>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <Link to="/blog" activeClassName="active-link" partiallyActive={true}>Blog</Link>
           </li>
           <li>
-            <Link to="/events">Events</Link>
+            <Link to="/events" activeClassName="active-link" partiallyActive={true}>Events</Link>
           </li>
           <li>
-            <Link to="/members">Troop</Link>
+            <Link to="/members" activeClassName="active-link" partiallyActive={true}>Troop</Link>
           </li>
           <li>
-            <Link to="/">About</Link>
+            <Link to="/about" activeClassName="active-link">About</Link>
           </li>
         </ul>
         <div className="burger" onClick={this.toggleClass}>
