@@ -13,3 +13,12 @@ html {
   -moz-osx-font-smoothing: auto;
   box-sizing: border-box;
 }
+
+.mainbody {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
