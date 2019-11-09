@@ -1,0 +1,13 @@
+@import "../partials/colors";
+
+.footer {
+  background-color: $footer-color;
+  padding: 0.8rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: #fff;
+  }
+}
