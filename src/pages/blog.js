@@ -10,23 +10,23 @@ const BlogPage = ({ data }) => (
   <div className="mainbody">
     <SEO title="Blog" />
     <Header />
-    <div className="content">
-    <h1>Latest Posts</h1>
-    {data.allMarkdownRemark.edges.map(post => (
-      <div key={post.node.id}>
-        <h3>{post.node.frontmatter.title}</h3>
-        <small>
-          Posted by {post.node.frontmatter.author}
-          <br /> On {post.node.frontmatter.date}
-        </small>
-        <br />
-        <br />
-        <Link to={post.node.frontmatter.path}>Read More</Link>
-        <br />
-        <br />
-        <hr />
-      </div>
-    ))}
+    <div className="site-content">
+      <h1>Latest Posts</h1>
+      {data.allMarkdownRemark.edges.map(post => (
+        <div key={post.node.id}>
+          <h3>{post.node.frontmatter.title}</h3>
+          <small>
+            Posted by {post.node.frontmatter.author}
+            <br /> On {post.node.frontmatter.date}
+          </small>
+          <br />
+          <br />
+          <Link to={post.node.frontmatter.path}>Read More</Link>
+          <br />
+          <br />
+          <hr />
+        </div>
+      ))}
     </div>
     <Footer />
   </div>

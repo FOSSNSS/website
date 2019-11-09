@@ -14,11 +14,12 @@ html {
   box-sizing: border-box;
 }
 
-.mainbody {
+.mainbody{
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
 }
 
-.content {
-  flex: 1 0 auto;
+.site-content {
+  flex-grow: 1;
 }
