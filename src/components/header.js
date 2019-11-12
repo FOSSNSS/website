@@ -5,8 +5,8 @@ class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      isToggleOn: true,
-      toggleClassName: "nav-links",
+      isToggleOn: false,
+      toggleClassName: "nav-active",
     }
 
     // This binding is necessary to make `this` work in the callback
@@ -17,21 +17,23 @@ class Header extends Component {
     if (!this.state.isToggleOn) {
       this.setState(state => ({
         isToggleOn: !state.isToggleOn,
-        toggleClassName: `nav-links`,
+        toggleClassName: `onmobile`,
       }))
     } else {
       this.setState(state => ({
         isToggleOn: !state.isToggleOn,
-        toggleClassName: `nav-links nav-active`,
+        toggleClassName: `onmobile nav-active`,
       }))
     }
   }
 
   render() {
     return (
-      <nav>
-        <div className="logo">FOSS NSS</div>
-        <ul className={this.state.toggleClassName}>
+      <div>
+        <nav>
+          <div className="logo">FOSS NSS</div>
+
+           <ul className="nav-links">
           <li>
             <Link to="/" activeClassName="active-link">Home</Link>
           </li>
@@ -47,13 +49,54 @@ class Header extends Component {
           <li>
             <Link to="/about" activeClassName="active-link">About</Link>
           </li>
+        </ul> 
+
+          <div className="burger" onClick={this.toggleClass}>
+            <div className="line1"></div>
+            <div className="line2"></div>
+            <div className="line3"></div>
+          </div>
+        </nav>
+        <ul className={this.state.toggleClassName}>
+          <li>
+            <Link to="/" activeClassName="active-link">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/blog"
+              activeClassName="active-link"
+              partiallyActive={true}
+            >
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/events"
+              activeClassName="active-link"
+              partiallyActive={true}
+            >
+              Events
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/members"
+              activeClassName="active-link"
+              partiallyActive={true}
+            >
+              Troop
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" activeClassName="active-link">
+              About
+            </Link>
+          </li>
         </ul>
-        <div className="burger" onClick={this.toggleClass}>
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
-        </div>
-      </nav>
+      </div>
     )
   }
 }
