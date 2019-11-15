@@ -20,4 +20,15 @@ html {
 
 .site-content {
     flex-grow: 1;
+    padding: 1rem;
+}
+
+pre{
+    padding: 1rem;
+    background-color: whitesmoke;
+    
+}
+
+code{
+    background-color: whitesmoke;
 }
