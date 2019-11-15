@@ -5,6 +5,8 @@ import { graphql } from 'gatsby';
 import Header from '../components/header';
 import SEO from '../components/seo';
 import Footer from '../components/footer';
+import "../styles/partials/layouts/_blog.scss"
+import Img from 'gatsby-image'
 
 const BlogPage = ({ data }) => (
     <div className='mainbody'>
@@ -12,21 +14,27 @@ const BlogPage = ({ data }) => (
         <Header />
         <div className='site-content'>
             <h1>Latest Posts</h1>
+            <div className='container'>
             {data.allMarkdownRemark.edges.map(post => (
-                <div key={post.node.id}>
+              <Link  className='link' to={post.node.frontmatter.path}>
+                  <div key={post.node.id} className='card'>
+                    <div className ='cover'>
+                   <Img  style={{ height: '100%' }} fluid={post.node.frontmatter.cover.childImageSharp.fluid} />
+                   </div>
+                   <div >
                     <h3>{post.node.frontmatter.title}</h3>
+                    <span>{post.node.frontmatter.desc}</span>
                     <small>
                         Posted by {post.node.frontmatter.author}
                         <br /> On {post.node.frontmatter.date}
                     </small>
-                    <br />
-                    <br />
-                    <Link to={post.node.frontmatter.path}>Read More</Link>
-                    <br />
-                    <br />
-                    <hr />
-                </div>
+                    </div>
+                  </div>
+                  <div>
+                  </div>
+                </Link>
             ))}
+        </div>
         </div>
         <Footer />
     </div>
@@ -42,6 +50,18 @@ export const pageQuery = graphql`
                     id
                     frontmatter {
                         path
+                        cover {
+                          publicURL
+                          childImageSharp {
+                            fluid(maxWidth: 1000) {
+                              srcSet
+                              ...GatsbyImageSharpFluid_tracedSVG
+                            }
+                          }
+                        }
+                        desc
+                        name
+                        tag
                         title
                         date
                         author

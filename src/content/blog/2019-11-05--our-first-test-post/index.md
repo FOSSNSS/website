@@ -1,8 +1,12 @@
 ---
 path: /blog/first-post
 date: "2019-11-05"
-author: "Denil Verghese"
+cover: "./manmount.jpg"
+tag: "Test"
+author: "tupio"
+name: "Denil Verghese"
 title: "Welcome to FOSSNSS"
+desc: "A welcome blog post for FOSS"
 ---
 
 # Welcome
