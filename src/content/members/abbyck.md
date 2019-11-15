@@ -1,6 +1,6 @@
 ---
 name: "Abhinav Krishna C K"
-avathar: "http://github.com/abbyck.png?size=200"
+avathar: "https://github.com/abbyck.png?size=200"
 designation: "Student Coordinator"
 url: "http://github.com/abbyck"
 dept: "CSE"

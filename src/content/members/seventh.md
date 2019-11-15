@@ -1,6 +1,6 @@
 ---
 name: "Test Member"
-avathar: "http://github.com/awesome.png?size=200"
+avathar: "https://github.com/awesome.png?size=200"
 designation: "Core Member"
 url: "http://github.com/testueser"
 dept: "TDE"

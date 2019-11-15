@@ -11,14 +11,32 @@
         background: rgb(218, 209, 206);
         padding: 0;
         display: flex;
+        max-width: 200px;
+        border-radius: 5px;
         flex-direction: column;
         a {
             text-decoration: none;
             color: rgb(0, 0, 0);
         }
         img {
-            height: 50px;
+            height: fit-content;
+            width: fit-content;
+
+            max-width: 200px;
+            max-height: 200px;
         }
+        h5{
+            padding-left: 8px;
+        }
+        h6{
+            padding-left: 8px;
+        }
+        p{
+            padding: 8px;
+        }
+    }
+    .member-card:hover{
+        box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
     }
 }
 

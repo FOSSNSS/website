@@ -21,9 +21,10 @@ const BlogPage = ({ data }) => (
                     <div className ='cover'>
                    <Img  style={{ height: '100%' }} fluid={post.node.frontmatter.cover.childImageSharp.fluid} />
                    </div>
-                   <div >
+                   <div className='cardbody'>
                     <h3>{post.node.frontmatter.title}</h3>
                     <span>{post.node.frontmatter.desc}</span>
+                    <br/>
                     <small>
                         Posted by {post.node.frontmatter.author}
                         <br /> On {post.node.frontmatter.date}

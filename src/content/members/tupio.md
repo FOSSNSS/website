@@ -1,6 +1,6 @@
 ---
 name: "Denil C Verghese"
-avathar: "http://github.com/tupio.png?size=200"
+avathar: "https://github.com/tupio.png?size=200"
 designation: "Student Coordinator"
 url: "http://github.com/tupio"
 dept: "CSE"

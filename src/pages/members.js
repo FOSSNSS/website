@@ -24,6 +24,7 @@ const SecondPage = ({ data }) => (
                                 alt={`Avathar of ${member.node.frontmatter.name} from Gitlab/Github`}
                             />
                             <h5>{member.node.frontmatter.name}</h5>
+                <h6>{member.node.frontmatter.designation}</h6>
                             <p>Email: {member.node.frontmatter.email}</p>
                         </a>
                     </div>
