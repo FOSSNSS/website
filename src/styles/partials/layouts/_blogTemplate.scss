@@ -1,0 +1,33 @@
+.site-content {
+    padding: 25px 17%;
+}
+
+.post-content {
+    line-height: 140%;
+}
+
+.desc{
+    color:#3a4b5e;
+    font-weight: 500;
+}
+
+.auth-date{
+    color:rgb(65, 54, 54);
+    font-weight: 450;
+}
+
+@media screen and (max-width: 768px) {
+    .site-content {
+        padding: 0 4%;
+    }
+    .post-content{
+        .gatsby-resp-image-wrapper{
+            .gatsby-resp-image-link{
+                max-width: 75%;
+                justify-content:center;
+                align-items: center;
+            }
+        }
+    }
+}
+
