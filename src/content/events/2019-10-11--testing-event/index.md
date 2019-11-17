@@ -3,6 +3,7 @@ path: /events/first-event
 date: "2019-10-15"
 author: "Test Author"
 title: "Welcome to the first event of FOSSNSS"
+cover: "./mount.jpg"
 ---
 
 # Welcome
