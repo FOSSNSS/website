@@ -6,7 +6,10 @@
 }
 .site-content{
     text-align: center;
-    align-items: center;
+	align-items: center;
+	p, pre, ol, ul {
+		text-align: left;
+	}
     .event-container{
         padding: 1% 2%;
         display: flex;

@@ -1,66 +1,66 @@
 module.exports = {
-  siteMetadata: {
-    title: `FOSS NSS | Free and Open Source Software Cell of NSSCE`,
-    description: `Free and Open Source Software Cell of NSS College of Engineering, Palakkad`,
-    author: "admin@fossnss",
-  },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+    siteMetadata: {
+        title: `FOSS NSS | Free and Open Source Software Cell of NSSCE`,
+        description: `Free and Open Source Software Cell of NSS College of Engineering, Palakkad`,
+        author: 'admin@fossnss',
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `FOSS Cell NSSCE`,
-        short_name: `FOSSNSS`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/foss-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    "gatsby-plugin-catch-links",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: "pages",
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/content`,
-        name: `markdown-pages`,
-      },
-    },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          "gatsby-remark-relative-images",
-          {
-            resolve: "gatsby-remark-images",
-            optional: {
-              maxWidth: 750,
-              linkImagesToOriginal: false,
-              tracedSVG: true,
+    plugins: [
+        `gatsby-plugin-react-helmet`,
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sass`,
+        `gatsby-plugin-sharp`,
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `FOSS Cell NSSCE`,
+                short_name: `FOSSNSS`,
+                start_url: `/`,
+                background_color: `#663399`,
+                theme_color: `#663399`,
+                display: `minimal-ui`,
+                icon: `src/images/foss-icon.png`, // This path is relative to the root of the site.
             },
-          },
-        ],
-      },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    //  `gatsby-plugin-offline`, Disable during initial devloping
-  ],
-}
+        },
+        'gatsby-plugin-catch-links',
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/src/pages`,
+                name: 'pages',
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/src/content`,
+                name: `markdown-pages`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/src/images`,
+            },
+        },
+        {
+            resolve: 'gatsby-transformer-remark',
+            options: {
+                plugins: [
+                    'gatsby-remark-relative-images',
+                    {
+                        resolve: 'gatsby-remark-images',
+                        optional: {
+                            maxWidth: 750,
+                            linkImagesToOriginal: false,
+                            tracedSVG: true,
+                        },
+                    },
+                ],
+            },
+        },
+        // this (optional) plugin enables Progressive Web App + Offline functionality
+        // To learn more, visit: https://gatsby.dev/offline
+        //  `gatsby-plugin-offline`, Disable during initial devloping
+    ],
+};

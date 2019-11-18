@@ -1,7 +1,7 @@
 ---
 name: "Denil C Verghese"
 avathar: "https://github.com/tupio.png?size=200"
-designation: "Student Coordinator"
+designation: "Event Head"
 url: "http://github.com/tupio"
 dept: "CSE"
 email: "denilcv@gmail.com"
