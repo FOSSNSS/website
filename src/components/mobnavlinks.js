@@ -42,16 +42,6 @@ const MobNavLinks = props => (
                 </Link>
             </p>
         </li>
-        <li>
-            <p>
-                <Link
-                    to='/members'
-                    activeClassName='mobactive-link'
-                    partiallyActive={true}>
-                    Troop
-                </Link>
-            </p>
-        </li>
     </ul>
 );
 
