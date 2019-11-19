@@ -1,12 +1,14 @@
-import { Link } from 'gatsby';
 import React, { Component } from 'react';
+
+import Logo from './header-logo';
+import NavLinks from './navlinks';
+import MobNavLinks from './mobnavlinks';
 
 class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
             isToggleOn: false,
-            toggleClassName: 'nav-active',
         };
 
         // This binding is necessary to make `this` work in the callback
@@ -14,104 +16,34 @@ class Header extends Component {
     }
 
     toggleClass() {
-        if (!this.state.isToggleOn) {
-            this.setState(state => ({
-                isToggleOn: !state.isToggleOn,
-                toggleClassName: `onmobile`,
-            }));
-        } else {
-            this.setState(state => ({
-                isToggleOn: !state.isToggleOn,
-                toggleClassName: `onmobile nav-active`,
-            }));
-        }
+		console.log(`state ${this.state.isToggleOn}`);
+
+        this.setState(state => (
+			{
+            isToggleOn: !state.isToggleOn,
+        }));
     }
 
     render() {
         return (
-            <div>
+            <div className='nav-container'>
                 <nav>
-                    <div className='logo'>FOSS NSS</div>
-
-                    <ul className='nav-links'>
-                        <li>
-                            <Link to='/' activeClassName='active-link'>
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to='/blog'
-                                activeClassName='active-link'
-                                partiallyActive={true}>
-                                Blog
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to='/events'
-                                activeClassName='active-link'
-                                partiallyActive={true}>
-                                Events
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to='/members'
-                                activeClassName='active-link'
-                                partiallyActive={true}>
-                                Troop
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to='/about' activeClassName='active-link'>
-                                About
-                            </Link>
-                        </li>
-                    </ul>
-
+                    <Logo />
+                    <NavLinks />
                     <div className='burger' onClick={this.toggleClass}>
                         <div className='line1'></div>
                         <div className='line2'></div>
                         <div className='line3'></div>
                     </div>
                 </nav>
-                <ul className={this.state.toggleClassName}>
-                    <li>
-                        <Link to='/' activeClassName='active-link'>
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to='/blog'
-                            activeClassName='active-link'
-                            partiallyActive={true}>
-                            Blog
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to='/events'
-                            activeClassName='active-link'
-                            partiallyActive={true}>
-                            Events
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to='/members'
-                            activeClassName='active-link'
-                            partiallyActive={true}>
-                            Troop
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to='/about' activeClassName='active-link'>
-                            About
-                        </Link>
-                    </li>
-                </ul>
+                <MobNavLinks
+                    activateStatus={
+                        this.state.isToggleOn
+                            ? 'onmobile activate-mob'
+                            : 'onmobile'
+					}
+					action={this.toggleClass}
+                />
             </div>
         );
     }

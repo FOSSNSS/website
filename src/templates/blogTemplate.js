@@ -1,10 +1,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Link from 'gatsby-link';
+// import Link from 'gatsby-link';
 
 import Header from '../components/header';
 import SEO from '../components/seo';
 import Footer from '../components/footer';
+import '../styles/partials/layouts/_blogTemplate.scss';
 
 export default function Template({
     data, // this prop will be injected by the GraphQL query below.
@@ -15,14 +16,17 @@ export default function Template({
         <div className='mainbody'>
             <SEO title={`${frontmatter.title} - Blog - `} />
             <Header />
+            {/* <Link to='/blog'>Go Back</Link> */}
             <div className='site-content'>
-                <Link to='/blog'>Go Back</Link>
-                <hr />
                 <h1>{frontmatter.title}</h1>
-                <h4>
+                <h2 className='desc'>{frontmatter.desc}</h2>
+                <h3 className='auth-date'>
                     Posted by {frontmatter.author} on {frontmatter.date}
-                </h4>
-                <div dangerouslySetInnerHTML={{ __html: html }} />
+                </h3>
+                <div
+                    class='post-content'
+                    dangerouslySetInnerHTML={{ __html: html }}
+                />
             </div>
             <Footer />
         </div>
@@ -38,6 +42,7 @@ export const postQuery = graphql`
                 title
                 author
                 date
+                desc
             }
         }
     }

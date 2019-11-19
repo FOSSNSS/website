@@ -1,0 +1,41 @@
+
+
+.link{
+    text-decoration: none;
+    color:black;
+}
+.site-content{
+    text-align: center;
+	align-items: center;
+	p, pre, ol, ul {
+		text-align: left;
+	}
+    .event-container{
+        padding: 1% 2%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        .event-card{
+            margin: 20px;
+            padding: 10px;
+            max-width: 260px;
+            min-width: 260px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            display: grid;
+            align-items: center;
+        }
+        .event-card:hover{
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
+        }
+    }   
+}
+@media screen and (max-width:768px){
+    .site-content{
+        .event-container{
+            padding: 0 7%;
+        }
+    }        
+}
