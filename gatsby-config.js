@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-        title: `FOSS NSS | Free and Open Source Software Cell of NSSCE`,
-        description: `Free and Open Source Software Cell of NSS College of Engineering, Palakkad`,
+        title: `FOSS NSS | Free and Open Source Software Cell (FOSS Cell) of NSSCE`,
+        description: `The FOSS Cell (FOSS NSS) of NSS College of Engineering, Palakkad is a cell of students who like to explore and spread the open-source software ecosystem. Roots of this FOSS Cell dates back to the year 2009. Welcoming the whole campus to the world of Freedom, Community and Free Software. Free software, Free Campus, Free Society.`,
         author: 'admin@fossnss',
     },
     plugins: [
@@ -15,9 +15,9 @@ module.exports = {
                 name: `FOSS Cell NSSCE`,
                 short_name: `FOSSNSS`,
                 start_url: `/`,
-                background_color: `#663399`,
-                theme_color: `#663399`,
-                display: `minimal-ui`,
+                background_color: `#2980b9`,
+                theme_color: `#2980b9`,
+                display: `standalone`,
                 icon: `src/images/foss-icon.png`, // This path is relative to the root of the site.
             },
         },
