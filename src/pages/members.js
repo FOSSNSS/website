@@ -10,8 +10,9 @@ const SecondPage = ({ data }) => (
     <div className='mainbody'>
         <SEO title='Meet the Team' />
         <Header />
-		<h3 className="member-heading">Meet our Team</h3>
-		<div className='scoordinator'>
+        <div className='member-mainbody'>
+            <h3 className='member-heading'>Meet our Team</h3>
+            <div className='scoordinator'>
                 <div className='coordinator'>
                     <a href='https://in.linkedin.com/in/syam-sankar-134b70110'>
                         <Img
@@ -22,27 +23,28 @@ const SecondPage = ({ data }) => (
                         <h6>Staff Co-ordinator</h6>
                     </a>
                 </div>
-				<br />
+                <br />
             </div>
-        <div
-            className='site-content-members'
-            style={{
-                display: 'flex',
-                justifyContent: 'center',
-            }}>
-            <div className='showmembers'>
-                {data.allMarkdownRemark.edges.map(member => (
-                    <div key={member.node.id} className='member-card'>
-                        <a href={member.node.frontmatter.url}>
-                            <img
-                                src={member.node.frontmatter.avathar}
-                                alt={`Avathar of ${member.node.frontmatter.name} from Gitlab/Github`}
-                            />
-                            <h5>{member.node.frontmatter.name}</h5>
-                            <h6>{member.node.frontmatter.designation}</h6>
-                        </a>
-                    </div>
-                ))}
+            <div
+                className='site-content-members'
+                style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                }}>
+                <div className='showmembers'>
+                    {data.allMarkdownRemark.edges.map(member => (
+                        <div key={member.node.id} className='member-card'>
+                            <a href={member.node.frontmatter.url}>
+                                <img
+                                    src={member.node.frontmatter.avathar}
+                                    alt={`Avathar of ${member.node.frontmatter.name} from Gitlab/Github`}
+                                />
+                                <h5>{member.node.frontmatter.name}</h5>
+                                <h6>{member.node.frontmatter.designation}</h6>
+                            </a>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
         <Footer />
