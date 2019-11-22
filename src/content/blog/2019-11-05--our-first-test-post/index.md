@@ -2,16 +2,16 @@
 path: /blog/first-post
 date: "2019-11-05"
 cover: "./manmount.jpg"
-tag: "Test"
+tag: "first-post"
 author: "tupio"
 name: "Denil Verghese"
-title: "Welcome to FOSSNSS"
-desc: "A welcome blog post for FOSS"
+title: "Welcome to the Official Website of FOSS NSS"
+desc: "A welcome post"
 ---
 
 # Welcome
 
-This is the Test blog post. So we're testing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis tortor lacinia nunc imperdiet aliquam. Duis ante orci, porta non libero ut, luctus convallis enim. Duis quis finibus lorem, ut dignissim lorem. Nulla nec aliquam dui, et aliquam enim. Praesent id eros bibendum, feugiat orci eu, venenatis mauris. Duis vestibulum erat vitae lectus tempus luctus. Nam malesuada, mi id tincidunt interdum, justo ligula ultrices velit, eget sodales nisl turpis a turpis. Etiam vestibulum urna et ligula lobortis, a sodales ligula feugiat. Nunc a rutrum justo, eget fermentum tellus.
+This is the Test blog post. So nothing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis tortor lacinia nunc imperdiet aliquam. Duis ante orci, porta non libero ut, luctus convallis enim. Duis quis finibus lorem, ut dignissim lorem. Nulla nec aliquam dui, et aliquam enim. Praesent id eros bibendum, feugiat orci eu, venenatis mauris. Duis vestibulum erat vitae lectus tempus luctus. Nam malesuada, mi id tincidunt interdum, justo ligula ultrices velit, eget sodales nisl turpis a turpis. Etiam vestibulum urna et ligula lobortis, a sodales ligula feugiat. Nunc a rutrum justo, eget fermentum tellus.
 
 ![a man looking at mountain](./manmount.jpg)
 

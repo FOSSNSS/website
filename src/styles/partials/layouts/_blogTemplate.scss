@@ -1,5 +1,16 @@
 .site-content {
-    padding: 25px 17%;
+	padding: 25px 17%;
+	.breadlink {
+		text-decoration: underline;
+		color: #3a4b5e;
+	}
+	.breadcrumps {
+		color: #2c3e50;
+		.breadcurrentloc {
+			font-weight: bold;
+			text-decoration: underline;
+		}
+	}
 }
 
 .post-content {

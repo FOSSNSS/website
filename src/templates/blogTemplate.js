@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-// import Link from 'gatsby-link';
+import Link from 'gatsby-link';
 
 import Header from '../components/header';
 import SEO from '../components/seo';
@@ -16,10 +16,21 @@ export default function Template({
         <div className='mainbody'>
             <SEO title={`${frontmatter.title} - Blog - `} />
             <Header />
-            {/* <Link to='/blog'>Go Back</Link> */}
+
             <div className='site-content'>
+                <p className='breadcrumps'>
+                    <span role="img" aria-label="Feels like lost? You are here">🤔 🧭 </span>: {' '}
+                    <Link to='/' className='breadlink'>
+                        Home
+                    </Link>{' '}
+                    >>{' '}
+                    <Link to='/blog' className='breadlink'>
+                        Blog
+                    </Link>{' '}
+                    >> <span className="breadcurrentloc">{`${frontmatter.title.slice(0, 10)}`}....</span>
+                </p>
                 <h1>{frontmatter.title}</h1>
-                <h2 className='desc'>{frontmatter.desc}</h2>
+                {/* <h2 className='desc'>{frontmatter.desc}</h2> */}
                 <h3 className='auth-date'>
                     Posted by {frontmatter.author} on {frontmatter.date}
                 </h3>
