@@ -5,8 +5,8 @@ import { graphql } from 'gatsby';
 import Header from '../components/header';
 import SEO from '../components/seo';
 import Footer from '../components/footer';
-import "../styles/partials/layouts/_blog.scss"
-import Img from 'gatsby-image'
+import '../styles/partials/layouts/_blog.scss';
+import Img from 'gatsby-image';
 
 const BlogPage = ({ data }) => (
     <div className='mainbody'>
@@ -15,27 +15,33 @@ const BlogPage = ({ data }) => (
         <div className='site-content'>
             <h1>Latest Posts</h1>
             <div className='container'>
-            {data.allMarkdownRemark.edges.map(post => (
-              <Link  className='link' to={post.node.frontmatter.path}>
-                  <div key={post.node.id} className='card'>
-                    <div className ='cover'>
-                   <Img  style={{ height: '100%' }} fluid={post.node.frontmatter.cover.childImageSharp.fluid} />
-                   </div>
-                   <div className='cardbody'>
-                    <h3>{post.node.frontmatter.title}</h3>
-                    <span>{post.node.frontmatter.desc}</span>
-                    <br/>
-                    <small>
-                        Posted by {post.node.frontmatter.author}
-                        <br /> On {post.node.frontmatter.date}
-                    </small>
-                    </div>
-                  </div>
-                  <div>
-                  </div>
-                </Link>
-            ))}
-        </div>
+                {data.allMarkdownRemark.edges.map(post => (
+                    <Link className='link' to={post.node.frontmatter.path}>
+                        <div key={post.node.id} className='card'>
+                            <div className='cover'>
+                                <Img
+                                    style={{ height: '100%' }}
+                                    fluid={
+                                        post.node.frontmatter.cover
+                                            .childImageSharp.fluid
+                                    }
+                                />
+                            </div>
+
+                            <div className='cardbody'>
+                                <h3>{post.node.frontmatter.title}</h3>
+                                <span>{post.node.frontmatter.desc}</span>
+                                <br />
+                                <small>
+                                    Posted by {post.node.frontmatter.author}
+                                    <br /> On {post.node.frontmatter.date}
+                                </small>
+                            </div>
+                        </div>
+                        <div></div>
+                    </Link>
+                ))}
+            </div>
         </div>
         <Footer />
     </div>
@@ -52,13 +58,13 @@ export const pageQuery = graphql`
                     frontmatter {
                         path
                         cover {
-                          publicURL
-                          childImageSharp {
-                            fluid(maxWidth: 1000) {
-                              srcSet
-                              ...GatsbyImageSharpFluid_tracedSVG
+                            publicURL
+                            childImageSharp {
+                                fluid(maxWidth: 1000) {
+                                    srcSet
+                                    ...GatsbyImageSharpFluid_tracedSVG
+                                }
                             }
-                          }
                         }
                         desc
                         name
