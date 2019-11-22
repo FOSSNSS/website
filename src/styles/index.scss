@@ -19,17 +19,20 @@ html {
 }
 
 .site-content {
-	margin-top: 75px;
     flex-grow: 1;
     padding: 1rem;
 }
 
-pre{
+@media screen and (max-width: 768px) {
+    .site-content {
+        margin-top: 75px;
+    }
+}
+pre {
     padding: 1rem;
     background-color: whitesmoke;
-    
 }
 
-code{
+code {
     background-color: whitesmoke;
 }
