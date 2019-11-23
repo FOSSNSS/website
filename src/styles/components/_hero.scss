@@ -22,31 +22,33 @@
             justify-content: flex-start;
             flex-wrap: wrap;
             .btn {
-                border: 1px solid #2980b9;
+                
                 box-sizing: border-box;
                 margin: 20px;
                 padding: 15px 20px;
                 text-decoration: none;
-                border-radius: 25px;
-                font-weight: bold;
+                border-radius: 35px;
             }
             .btn-active {
                 background: linear-gradient(45deg, #2980b9, #3498db);
                 color: #fff;
-                transition: 0.3s all linear;
+				transition: 0.5s all linear;
+				border: 1px solid #fff;
                 &:hover {
                     background: linear-gradient(45deg, #fff, #fff);
-                    border: 1px solid #2980b9;
-                    color: #373d3f;
+                    // border: 1px solid #2980b9;
+					color: #373d3f;
+					border: 1px solid #2980b9;
                 }
             }
             .btn-ghost {
                 background-color: #fff;
                 padding: 15px 50px;
                 color: #373d3f;
-                transition: 0.3s all linear;
+				transition: 0.5s all linear;
+				border: 1px solid #2980b9;
                 &:hover {
-                    background: linear-gradient(45deg ,#2980b9,#3498db);
+                    background: linear-gradient(45deg, #2980b9, #3498db);
                     color: #fff;
                 }
             }
