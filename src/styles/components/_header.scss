@@ -48,13 +48,19 @@ nav {
     }
 
     .burger {
-        display: none;
-        padding: 15px;
+		display: none;
+		box-sizing: border-box;
+		width: 59px;
+		height: 55px;
+		padding: 15px;
+		border-radius: 50%;
+		background: linear-gradient(45deg,#2980b9, #3498db);
         div {
-            width: 25px;
+            width: 30px;
             height: 3px;
-            background-color: $header-nav;
-            margin: 5px;
+            background-color: #fff;
+			margin: 0;
+			margin-bottom: 7px;
         }
     }
 }
