@@ -1,0 +1,81 @@
+.herosect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    margin: 2% 7%;
+    .herotext {
+        h1 {
+            font-size: 2.1rem;
+            color: #373d3f;
+            margin-bottom: 0;
+            flex-basis: 50%;
+        }
+        .herodesc {
+            margin-top: 0;
+            width: 85%;
+            text-align: justify;
+        }
+        .buttons {
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+            .btn {
+                box-sizing: border-box;
+                margin: 20px;
+                padding: 10px 20px;
+                border: 2px solid #2980b9;
+                text-decoration: none;
+                border-radius: 25px;
+            }
+            .btn-active {
+                background-color: #2980b9;
+                color: #fff;
+                transition: 0.2s all ease-in;
+                &:hover {
+                    background-color: #fff;
+                    color: #373d3f;
+                }
+            }
+            .btn-ghost {
+                background-color: #fff;
+                padding: 10px 50px;
+                color: #373d3f;
+                transition: 0.2s all ease-in;
+                &:hover {
+                    background-color: #2980b9;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .heroimage {
+        max-width: 100%;
+        width: 90vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .herosect {
+		flex-wrap: wrap;
+		.heroimage{
+			margin-top: 20px;
+		}
+        .herotext {
+            h1 {
+                font-weight: 100;
+            }
+            .herodesc {
+                width: 100%;
+            }
+            .buttons {
+                .btn {
+                    margin: 10px 20px;
+                }
+            }
+        }
+    }
+}

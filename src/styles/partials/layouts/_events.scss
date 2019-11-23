@@ -5,8 +5,11 @@
     color:black;
 }
 .site-content{
-    text-align: center;
+    text-align: left;
 	align-items: center;
+	.center {
+		text-align: center;
+	}
 	p, pre, ol, ul {
 		text-align: left;
 	}

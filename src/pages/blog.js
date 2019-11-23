@@ -13,7 +13,7 @@ const BlogPage = ({ data }) => (
         <SEO title='Blog' />
         <Header />
         <div className='site-content'>
-            <h1>Latest Posts</h1>
+            <h1 className="center">Latest Posts</h1>
             <div className='container'>
                 {data.allMarkdownRemark.edges.map(post => (
                     <Link className='link' to={post.node.frontmatter.path}>

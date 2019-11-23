@@ -13,7 +13,7 @@ const EventPage = ({ data }) => (
         <SEO title='Events' />
         <Header />
         <div className='site-content'>
-            <h1>Latest Events</h1>
+            <h1 className="center">Latest Events</h1>
             <div className='event-container'>
                 {data.allMarkdownRemark.edges.map(post => (
                     <Link to={post.node.frontmatter.path} className='link'>
