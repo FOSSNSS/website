@@ -31,7 +31,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "GPL V3",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "env-cmd gatsby develop",
