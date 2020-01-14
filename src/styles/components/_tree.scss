@@ -1,0 +1,64 @@
+.treesect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    margin: 4% 7%;
+
+    .treeimage {
+        max-width: 100%;
+        width: 90vw;
+        height: auto;
+    }
+
+    .treetext {
+        margin-left: 10%;
+
+        .treequote1 {
+            // content: &rdquo;;
+            font-size: 100px;
+            // color: green;
+        }
+        .treequote2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: flex-end;
+
+            .quotediv {
+                width: 100%;
+            }
+
+            .quote {
+                font-size: 100px;
+                color: red($color: #000000);
+            }
+        }
+
+        .treedesc {
+            margin-top: 0;
+            margin-bottom: 8%;
+            margin-left: 7%;
+            width: 85%;
+            text-align: justify;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .treesect {
+        flex-wrap: wrap;
+        height: 100vh;
+        
+        margin-top: 15%;
+        .treeimage {
+            margin-top: 20px;
+        }
+        .treetext {
+            h1 {
+                font-weight: 100;
+            }
+        }
+    }
+}

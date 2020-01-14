@@ -5,6 +5,7 @@ import SEO from '../components/seo';
 import Header from '../components/header';
 import HeroSect from '../components/hero-section';
 import Footer from '../components/footer';
+import TreeSect from '../components/tree-section';
 
 const IndexPage = () => (
     <div className='mainbody'>
@@ -12,10 +13,11 @@ const IndexPage = () => (
         <Header />
 
         <HeroSect />
-		
-		<div className="site-content">
 
-		</div>
+        <TreeSect />
+
+        <div className='site-content'>
+        </div>
         <Footer />
     </div>
 );
