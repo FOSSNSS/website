@@ -27,7 +27,7 @@ export default () => (
                     <h1>
                         Building Community <br />
                          Through Sharing
-                    </h1><br/>
+                    </h1><br/><br/>
                     <span className='treequote1'>&ldquo;</span>
                     <p className='treedesc'>
                         Sharing knowledge is the most fundamental act of
