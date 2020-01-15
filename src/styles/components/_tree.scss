@@ -49,9 +49,8 @@
             font-weight: 500;
             font-style: italic;
             font-size: medium;
-            // text-align: justify;
         }
-        .quoteauthor{
+        .quoteauthor {
             margin-top: -50px;
             font-weight: 300;
             font-size: 18px;
@@ -64,26 +63,36 @@
     .treesect {
         display: flex;
         flex-direction: column-reverse;
-        // flex-wrap: wrap;
         height: 100vh;
-        
+
         margin-top: 15%;
         .treeimage {
             margin-top: 20px;
         }
         .treetext {
+            font-weight: 100;
+            margin-left: 5%;
+            margin-right: 5%;
+
+            h1 {
                 font-weight: 100;
-                margin-left: 5%;
-                margin-right: 5%;
+            }
 
-                h1 {
-                    font-weight: 100;
-                }
+            .quoteauthor {
+                margin-left: 36%;
+            }
+        }
+    }
+}
 
-                .quoteauthor{
-                    margin-left: 36%;
-                }
-            
+@media screen and (max-width: 366px) {
+    .treesect {
+        margin-top: 200px;
+        margin-bottom: 30px;
+        .treetext {
+            .quoteauthor {
+                margin-left: 25%;
+            }
         }
     }
 }
