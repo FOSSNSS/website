@@ -23,7 +23,7 @@ export default () => (
 					<p className="herodesc">A collective of students to bring out freedom and liberation through inspiring and creating skills for collaboration and spreading of FOSS and it's culture.</p>
                     <div className='buttons'>
                         <a
-                            href='https://kutt.it/3dworkshop'
+                            href='https://forms.gle/sWCU2L2KYpGmTZzg8'
                             className='btn btn-active'>
                             Become a Member
                         </a>
