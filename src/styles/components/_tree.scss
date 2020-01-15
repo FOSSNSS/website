@@ -4,22 +4,26 @@
     justify-content: space-around;
     align-items: center;
     height: 70vh;
-    margin: 6% 7%;
+    margin: 0% 7%;
     padding-top: 10px;
 
     .treeimage {
         max-width: 100%;
-        width: 90vw;
+        width: 80vw;
         height: auto;
     }
 
     .treetext {
         margin-left: 10%;
+        h1 {
+            font-size: 2.1rem;
+            color: #373d3f;
+            margin-bottom: 0;
+            flex-basis: 50%;
+        }
 
         .treequote1 {
-            // content: &rdquo;;
-            font-size: 100px;
-            // color: green;
+            font-size: 80px;
         }
         .treequote2 {
             display: flex;
@@ -32,20 +36,19 @@
             }
 
             .quote {
-                font-size: 100px;
-                color: red($color: #000000);
+                font-size: 80px;
             }
         }
 
         .treedesc {
-            margin-top: 0;
-            margin-bottom: 8%;
+            margin-top: -40px;
+            margin-bottom: 0px;
             margin-left: 7%;
             width: 85%;
             font-weight: 500;
             font-style: italic;
             font-size: medium;
-            text-align: justify;
+            // text-align: justify;
         }
         .quoteauthor{
             margin-top: -50px;
@@ -71,6 +74,10 @@
                 font-weight: 100;
                 margin-left: 5%;
                 margin-right: 5%;
+
+                h1 {
+                    font-weight: 100;
+                }
 
                 .quoteauthor{
                     margin-left: 36%;
