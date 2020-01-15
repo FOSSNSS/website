@@ -24,7 +24,8 @@ export default () => (
                     />
                 </div>
                 <div className='treetext'>
-					<span className ='treequote1'>&ldquo;</span><p className='treedesc'>With software there are only two possibilites: either the users control the programme or the programme controls the users. If the programme controls the users, and the developer controls the programme, then the programme is an instrument of unjust power.<br/><br/><p>― Richard Stallman</p></p><div className = 'treequote2'><div className = 'quotediv'></div><span className ='quote'>&rdquo;</span></div>
+					<span className ='treequote1'>&ldquo;</span><p className='treedesc'>With software there are only two possibilites: either the users control the programme or the programme controls the users. If the programme controls the users, and the developer controls the programme, then the programme is an instrument of unjust power.</p><div className = 'treequote2'><div className = 'quotediv'></div><span className ='quote'>&rdquo;</span></div>
+                    <p className = 'quoteauthor'>― Richard Stallman</p>
 
                 </div>
             </div>

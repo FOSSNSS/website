@@ -4,7 +4,8 @@
     justify-content: space-around;
     align-items: center;
     height: 70vh;
-    margin: 4% 7%;
+    margin: 6% 7%;
+    padding-top: 10px;
 
     .treeimage {
         max-width: 100%;
@@ -41,14 +42,25 @@
             margin-bottom: 8%;
             margin-left: 7%;
             width: 85%;
+            font-weight: 500;
+            font-style: italic;
+            font-size: medium;
             text-align: justify;
+        }
+        .quoteauthor{
+            margin-top: -50px;
+            font-weight: 300;
+            font-size: 18px;
+            margin-left: 65%;
         }
     }
 }
 
 @media screen and (max-width: 768px) {
     .treesect {
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column-reverse;
+        // flex-wrap: wrap;
         height: 100vh;
         
         margin-top: 15%;
@@ -59,6 +71,10 @@
                 font-weight: 100;
                 margin-left: 5%;
                 margin-right: 5%;
+
+                .quoteauthor{
+                    margin-left: 36%;
+                }
             
         }
     }
