@@ -44,6 +44,7 @@ export const pageQuery = graphql`
     query EventsIndexQuery {
         allMarkdownRemark(
             filter: { fileAbsolutePath: { regex: "/events/.*md$/" } }
+            sort: { fields: [frontmatter___date], order: DESC }
         ) {
             edges {
                 node {
