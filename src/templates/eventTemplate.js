@@ -16,7 +16,17 @@ export default function Template({
             <SEO title={`${frontmatter.title} - Events - `} />
             <Header />
             <div className='site-content'>
-                <Link to='/events'>Go Back</Link>
+            <p className='breadcrumps'>
+                    <span role="img" aria-label="Feels like lost? You are here">🤔 🧭 </span>: {' '}
+                    <Link to='/' className='breadlink'>
+                        Home
+                    </Link>{' '}
+                    >>{' '}
+                    <Link to='/events' className='breadlink'>
+                        Events
+                    </Link>{' '}
+                    >> <span className="breadcurrentloc">{`${frontmatter.title.slice(0, 15)}`}....</span>
+                </p>
                 <hr />
                 <h1>{frontmatter.title}</h1>
                 <h4>

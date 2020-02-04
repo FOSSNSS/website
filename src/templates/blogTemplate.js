@@ -27,7 +27,7 @@ export default function Template({
                     <Link to='/blog' className='breadlink'>
                         Blog
                     </Link>{' '}
-                    >> <span className="breadcurrentloc">{`${frontmatter.title.slice(0, 10)}`}....</span>
+                    >> <span className="breadcurrentloc">{`${frontmatter.title.slice(0, 15)}`}....</span>
                 </p>
                 <h1>{frontmatter.title}</h1>
                 {/* <h2 className='desc'>{frontmatter.desc}</h2> */}
