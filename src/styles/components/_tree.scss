@@ -29,7 +29,7 @@
         .treequote2 {
             display: flex;
             flex-direction: row;
-            justify-content: end;
+            justify-content: "end";
             align-items: flex-end;
 
             .quotediv {
