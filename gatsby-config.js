@@ -54,8 +54,14 @@ module.exports = {
                             maxWidth: 750,
                             linkImagesToOriginal: false,
                             tracedSVG: true,
+                            showCaptions: true,
+                            markdownCaptions: true
                         },
                     },
+                    {
+                        resolve: `gatsby-remark-figure-caption`,
+                        options: { figureClassName: 'md-figure' },
+                    }
                 ],
             },
         },
