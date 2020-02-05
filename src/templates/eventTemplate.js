@@ -27,8 +27,7 @@ export default function Template({
                     </Link>{' '}
                     >> <span className="breadcurrentloc">{`${frontmatter.title.slice(0, 15)}`}....</span>
                 </p>
-                <hr />
-                <h1>{frontmatter.title}</h1>
+                <h1 className="templateH1">{frontmatter.title}</h1>
                 <h4>
                     Posted by {frontmatter.author} on {frontmatter.date}
                 </h4>
