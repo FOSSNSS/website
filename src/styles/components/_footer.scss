@@ -1,7 +1,38 @@
 @import '../partials/colors';
 
+.topfooter{
+    background-color: #34495e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .sect1,.sect2 {
+        h2 {
+            color: #fff;
+            font-weight: 100;
+            display: inline-block;
+            margin-bottom: 0;
+            border-bottom: 2px solid #fff;
+        }
+        ul{
+            padding-left: 0;
+            li{
+                list-style: none;
+                padding: 5px 0px;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    transition: 0.2s all linear;
+                    &:hover{
+                        color: #2ecc71;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .footer {
-    background-color: $footer-color;
+    background-color:#2c3e50;
     padding: 0.8rem 0;
 
     display: flex;
