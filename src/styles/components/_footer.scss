@@ -42,3 +42,13 @@
         color: #fff;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .topfooter{
+        margin-top: 15px;
+        flex-direction: column;
+        .sect2{
+            margin-left: -35px;
+        }
+    }
+}
