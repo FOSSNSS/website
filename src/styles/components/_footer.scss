@@ -47,8 +47,9 @@
     .topfooter{
         margin-top: 15px;
         flex-direction: column;
-        .sect2{
-            margin-left: -35px;
+        align-items: start;
+        .sect2, .sect1{
+            margin-left: 20px;
         }
     }
 }
