@@ -1,7 +1,7 @@
 ---
 name: "Abhinav A K"
 avathar: "https://github.com/AbhinavAK11.png?size=200"
-designation: "Desing Lead"
+designation: "Design Lead"
 url: "https://github.com/AbhinavAK11"
 dept: "CSE"
 email: "abhinavak@gmail.com"
