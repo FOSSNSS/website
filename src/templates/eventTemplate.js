@@ -28,9 +28,17 @@ export default function Template({
                     >> <span className="breadcurrentloc">{`${frontmatter.title.slice(0, 15)}`}....</span>
                 </p>
                 <h1 className="templateH1">{frontmatter.title}</h1>
-                <h4>
-                    Posted by {frontmatter.author} on {frontmatter.date}
-                </h4>
+                <div className="post-author">
+                        <img
+                            src={`https://github.com/${frontmatter.author}.png?size=70`}
+                            alt={`Avathar of ${frontmatter.name}`} 
+                        />
+                        <div>
+                            <p>{frontmatter.name}</p>
+                            <p>{frontmatter.date}</p>
+                        </div>
+                </div>
+                <div className="simpleline"></div>
                 <div dangerouslySetInnerHTML={{ __html: html }} />
             </div>
             <Footer />
@@ -46,6 +54,7 @@ export const postQuery = graphql`
                 path
                 title
                 author
+                name
                 date
             }
         }

@@ -4,6 +4,7 @@ date: "2019-10-23"
 author: "maze-n"
 title: "3D Modeling - Blender"
 cover: "./poster.png"
+name: "Mazen Maliyakkal"
 ---
 
 ![Poster](./poster.png)

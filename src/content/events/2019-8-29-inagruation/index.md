@@ -4,6 +4,7 @@ date: "2019-08-29"
 author: "tupio"
 title: "FOSS Cell Inauguration"
 cover: "./poster.jpeg"
+name: "Denil C V"
 ---
 
 ![Poster](./poster.jpeg)

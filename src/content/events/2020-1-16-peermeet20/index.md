@@ -4,6 +4,7 @@ date: "2020-01-16"
 author: "tupio"
 title: "Peer Meet"
 cover: "./poster2.jpeg"
+name: "Denil C V"
 ---
 
 ![Poster](./poster2.jpeg)

@@ -3,7 +3,7 @@ path: /blog/blender-workshop
 date: "2019-11-18"
 cover: "./cover.jpg"
 tag: "Blender Workshop"
-author: "Hazil Mohamed"
+author: "hazilMohamed"
 name: "Mohamed Hazil T A"
 title: "How I Organized My First Workshop"
 desc: "Stories, scenes and experience from my first workshop"
