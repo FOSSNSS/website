@@ -12,7 +12,7 @@ Excited to know everything about **3D modeling and designing**?
 Ever wondered how do those 3D visuals were created in your favourite animation movie?
 Learn these all from the scratch using **Blender**
 
-The  Free And Open Source Software Cell is organizing a 2 hour session workshop on 3D Modeling With Blender on  23<sup>rd</sup> and 24<sup>th</sup> October, 2019, 4 to 5 PM
+The Free And Open Source Software Cell is organizing a 2 hour session workshop on 3D Modeling With Blender on  23<sup>rd</sup> and 24<sup>th</sup> October, 2019, 4 to 5 PM
 
 
 
@@ -44,25 +44,11 @@ Mazen :8078043478
 > * What is Blender ?
 > * Why blender ?
 > * UI
-> * 3d viewport
-> * ToolBar
-> * Outliner
-> * Properties
-> * Animation
-> * Basics
-> * Shift A
-> * G, S, R, E
-> * 1 - Front
-> * 3 - Right
-> * 7 - Top
-> * 9 - opposite of all
-> * 0 - cam view
-> * 5 - perspective , orthographic
+> * Basics of Blender
 > * Modelling
 
 
 > ### Day 2
-> * Z viewports
 > * Modifiers
 > * Material
 > * Texturing
