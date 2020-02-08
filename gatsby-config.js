@@ -3,8 +3,10 @@ module.exports = {
         title: `FOSS NSS | Free and Open Source Software Cell (FOSS Cell) of NSSCE`,
         description: `The FOSS Cell (FOSS NSS) of NSS College of Engineering, Palakkad is a cell of students who like to explore and spread the open-source software ecosystem. Roots of this FOSS Cell dates back to the year 2009. Welcoming the whole campus to the world of Freedom, Community and Free Software. Free software, Free Campus, Free Society.`,
         author: 'admin@fossnss',
+        siteUrl: `https://fossnss.org`,
     },
     plugins: [
+        `gatsby-plugin-sitemap`,
         `gatsby-plugin-react-helmet`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sass`,
