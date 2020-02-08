@@ -3,7 +3,7 @@ path: /blog/inauguration
 date: "2019-08-28"
 cover: "./light.jpg"
 tag: "Inauguration"
-author: "Athul Krishnan"
+author: "athulkpm"
 name: "Athul Krishnan P M"
 title: "The Beginning - Inauguration"
 desc: "A story from my prespective on how we introduced our FOSS Cell to the world"
