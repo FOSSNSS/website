@@ -1,0 +1,69 @@
+---
+path: /events/3d-modeling-with-blender
+date: "2019-10-23"
+author: "maze-n"
+title: "3D Modeling - Blender"
+cover: "./poster.png"
+---
+
+![Poster](./poster.png)
+
+Excited to know everything about **3D modeling and designing**?
+Ever wondered how do those 3D visuals were created in your favourite animation movie?
+Learn these all from the scratch using **Blender**
+
+The  Free And Open Source Software Cell is organizing a 2 hour session workshop on 3D Modeling With Blender on  23<sup>rd</sup> and 24<sup>th</sup> October, 2019, 4 to 5 PM
+
+
+
+## Venue
+
+> **CCF (CNC) - NSS College of Engineering, Palakkad <br>**
+> Time: **4:00 PM to 5:00 PM <br>**
+> Dates: **23<sup>rd</sup> and 24<sup>th</sup> October, 2019**
+
+## Registeration
+
+To register, follow the link below:
+
+https://kutt.it/3dworkshop
+
+## Contact
+
+For more queries ,please contact:
+
+Hazil :7012503191
+Mazen :8078043478
+
+*NOTE: Participants are required to bring a laptop with them (With Blender software installed)*
+
+
+## Topics
+
+> ### Day 1
+> * What is Blender ?
+> * Why blender ?
+> * UI
+> * 3d viewport
+> * ToolBar
+> * Outliner
+> * Properties
+> * Animation
+> * Basics
+> * Shift A
+> * G, S, R, E
+> * 1 - Front
+> * 3 - Right
+> * 7 - Top
+> * 9 - opposite of all
+> * 0 - cam view
+> * 5 - perspective , orthographic
+> * Modelling
+
+
+> ### Day 2
+> * Z viewports
+> * Modifiers
+> * Material
+> * Texturing
+> * Lighting
