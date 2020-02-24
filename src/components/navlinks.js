@@ -1,6 +1,5 @@
 import { Link } from 'gatsby';
 import React from 'react';
-// import '../styles/partials/layouts/_navlinks.scss';
 
 const NavLinks = () => {
     const [active, setActive] = React.useState(false);
@@ -46,9 +45,10 @@ const NavLinks = () => {
                     className='accordion'
                     onMouseEnter={activateDropdown}
                     onMouseLeave={deactivateDropdown}>
-                    <div
-                        className={active ? 'arrow activate-arrow' : 'arrow'}
-                    />
+                    <span className={active ? 'arrow activate-arrow' : 'arrow'}>
+                        <span />
+                        <span />
+                    </span>
                 </button>
                 <NestedList
                     activateStatus={

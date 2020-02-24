@@ -138,7 +138,7 @@ nav {
   text-align: center;
   outline: none;
   height: 75px;
-  padding:15px 77px;
+  padding:15px 65px;
   letter-spacing: 2px;
   transition: 0.4s;
   font-weight: 500;
@@ -187,17 +187,42 @@ nav {
     color: #2980b9 !important;
 }
 
-.arrow {
-    box-sizing: border-box;
-    height: 22px;
-    width: 22px;
-    border-style: solid;
-    border-color:#373d3f;
-    border-width: 0px 2px 2px 0px;
-    transform: rotate(45deg);
-    transition: border-width 150ms ease-in-out;
+.arrow{
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  position: relative;
+  margin: 0 1rem;
+
+  span{
+    top: .5rem;
+    position: absolute;
+    width: .75rem;
+    height: .1rem;
+    background-color:#373d3f;
+    display: inline-block;
+    transition: all .2s ease;
+
+    &:first-of-type{
+      left: 0;
+      transform: rotate(45deg);
+    }
+    &:last-of-type{
+      right: 0;
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 .activate-arrow{
-    transform: rotate(225deg);
+    span{
+      &:first-of-type{
+        transform: rotate(-45deg);
+        background-color: #2980b9;
+      }
+      &:last-of-type{
+        transform: rotate(45deg);
+        background-color: #2980b9;
+      }
+    }
 }
