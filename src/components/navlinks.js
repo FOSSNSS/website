@@ -1,15 +1,14 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import '../styles/partials/layouts/_navlinks.scss';
+// import '../styles/partials/layouts/_navlinks.scss';
 
 const NavLinks = () => {
     const [active, setActive] = React.useState(false);
-    function changeState() {
-        if (active) {
-            setActive(false);
-        } else {
-            setActive(true);
-        }
+    function activateDropdown() {
+        if (!active) setActive(true);
+    }
+    function deactivateDropdown() {
+        if (active) setActive(false);
     }
     return (
         <ul className='nav-links'>
@@ -42,14 +41,21 @@ const NavLinks = () => {
                     Troop
                 </Link>
             </li>
-            <button className='accordion' onClick={changeState}>
-                More
-            </button>
-            <NestedList
-                activateStatus={
-                    active ? 'nestedList activate-nestedList' : 'nestedList'
-                }
-            />
+            <div>
+                <button
+                    className='accordion'
+                    onMouseEnter={activateDropdown}
+                    onMouseLeave={deactivateDropdown}>
+                    <div
+                        className={active ? 'arrow activate-arrow' : 'arrow'}
+                    />
+                </button>
+                <NestedList
+                    activateStatus={
+                        active ? 'nestedList activate-nestedList' : 'nestedList'
+                    }
+                />
+            </div>
         </ul>
     );
 };
