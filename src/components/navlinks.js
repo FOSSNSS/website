@@ -77,7 +77,7 @@ const NestedList = props => (
                     activeClassName='mobactive-link'
                     partiallyActive={true}
                     onClick={props.action}>
-                    Acheivements
+                    Achievements
                 </Link>
             </p>
         </li>
