@@ -3,8 +3,8 @@ path: /blog/hackerspace
 date: "2020-04-12"
 cover: "./cover.jpg"
 tag: "Hacker Space"
-author: "Jaseem ck"
-name: "^c ^v by JC"
+author: "Jaseemck"
+name: "Jaseem ck"
 title: "Why HackerSpace?"
 desc: "Why we need a community for coders in a campus?"
 ---
