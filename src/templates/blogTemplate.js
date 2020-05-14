@@ -19,43 +19,45 @@ export default function Template({
             <Header />
 
             <div className='site-content'>
-                <p className='breadcrumps'>
-                    <span role="img" aria-label="Feels like lost? You are here">🤔 🧭 </span>: {' '}
-                    <Link to='/' className='breadlink'>
-                        Home
+                <div className="post-content">
+                    <p className='breadcrumps'>
+                        <span role="img" aria-label="Feels like lost? You are here">🤔 🧭 </span>: {' '}
+                        <Link to='/' className='breadlink'>
+                            Home
                     </Link>{' '}
                     >>{' '}
-                    <Link to='/blog' className='breadlink'>
-                        Blog
+                        <Link to='/blog' className='breadlink'>
+                            Blog
                     </Link>{' '}
                     >> <span className="breadcurrentloc">{`${frontmatter.title.slice(0, 15)}`}....</span>
-                </p>
-                <h1 className="templateH1">{frontmatter.title}</h1>
-                <h2 className='desc'>{frontmatter.desc}</h2>
-                <div className="post-author">
-                    <img
-                        src={`https://github.com/${frontmatter.author}.png?size=70`}
-                        alt={`Avathar of ${frontmatter.name}`}
+                    </p>
+                    <h1 className="templateH1">{frontmatter.title}</h1>
+                    <h2 className='desc'>{frontmatter.desc}</h2>
+                    <div className="post-author">
+                        <img
+                            src={`https://github.com/${frontmatter.author}.png?size=70`}
+                            alt={`Avathar of ${frontmatter.name}`}
+                        />
+                        <div>
+                            <p><b><span role="img" aria-label="Penned by">🖋️</span> : {frontmatter.name}</b></p>
+                            <p><b><span role="img" aria-label="Date">🗓️</span> : {frontmatter.date}</b></p>
+                        </div>
+                    </div>
+                    <div className="simpleline"></div>
+                    <div
+                        class='markdown-body'
+                        dangerouslySetInnerHTML={{ __html: html }}
                     />
-                    <div>
-                        <p>{frontmatter.name}</p>
-                        <p>{frontmatter.date}</p>
+                    <br />
+                    <div className="commenthead">
+                        <img src="https://img.icons8.com/cotton/64/000000/comments--v2.png" alt="comment icon" />
+                        <div>
+                            <h2>Comments</h2>
+                            <span><p>Comments will be processed with privacy policy of <a href="https://utteranc.es">utteranc.es</a> and <a href="https://github.com">GitHub</a></p></span>
+                        </div>
                     </div>
+                    <ReactUtterences repo={'FOSSNSS/comment'} type={'url'} />
                 </div>
-                <div className="simpleline"></div>
-                <div
-                    class='post-content'
-                    dangerouslySetInnerHTML={{ __html: html }}
-                />
-                <br />
-                <div className="commenthead">
-                    <img src="https://img.icons8.com/cotton/64/000000/comments--v2.png" />
-                    <div>
-                        <h2>Comments</h2>
-                        <span><p>Comments will be processed with privacy policy of  <a href= "https://utteranc.es">utteranc.es</a></p></span>
-                    </div>
-                </div>
-                <ReactUtterences repo={'FOSSNSS/comment'} type={'url'} />
             </div>
             <Footer />
         </div>

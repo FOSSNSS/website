@@ -16,30 +16,35 @@ export default function Template({
             <SEO title={`${frontmatter.title} - Events - `} />
             <Header />
             <div className='site-content'>
-            <p className='breadcrumps'>
-                    <span role="img" aria-label="Feels like lost? You are here">🤔 🧭 </span>: {' '}
-                    <Link to='/' className='breadlink'>
-                        Home
+                <div className="post-content">
+                    <p className='breadcrumps'>
+                        <span role="img" aria-label="Feels like lost? You are here">🤔 🧭 </span>: {' '}
+                        <Link to='/' className='breadlink'>
+                            Home
                     </Link>{' '}
                     >>{' '}
-                    <Link to='/events' className='breadlink'>
-                        Events
+                        <Link to='/events' className='breadlink'>
+                            Events
                     </Link>{' '}
                     >> <span className="breadcurrentloc">{`${frontmatter.title.slice(0, 15)}`}....</span>
-                </p>
-                <h1 className="templateH1">{frontmatter.title}</h1>
-                <div className="post-author">
+                    </p>
+                    <h1 className="templateH1">{frontmatter.title}</h1>
+                    <div className="post-author">
                         <img
                             src={`https://github.com/${frontmatter.author}.png?size=70`}
-                            alt={`Avathar of ${frontmatter.name}`} 
+                            alt={`Avathar of ${frontmatter.name}`}
                         />
                         <div>
-                            <p>{frontmatter.name}</p>
-                            <p>{frontmatter.date}</p>
+                            <p><b><span role="img" aria-label="Penned by">🖋️</span> : {frontmatter.name}</b></p>
+                            <p><b><span role="img" aria-label="Date">🗓️</span> : {frontmatter.date}</b></p>
                         </div>
+                    </div>
+                    <div className="simpleline"></div>
+                    <div
+                        class='markdown-body'
+                        dangerouslySetInnerHTML={{ __html: html }}
+                    />
                 </div>
-                <div className="simpleline"></div>
-                <div dangerouslySetInnerHTML={{ __html: html }} />
             </div>
             <Footer />
         </div>

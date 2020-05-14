@@ -23,11 +23,7 @@ html {
     padding: 1rem;
 }
 
-@media screen and (max-width: 768px) {
-    .site-content {
-        margin-top: 75px;
-    }
-}
+
 pre {
     padding: 1rem;
     background-color: whitesmoke;
@@ -35,4 +31,21 @@ pre {
 
 code {
     background-color: whitesmoke;
+}
+
+.post-content {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+    border-left: 1px solid #eaecef;
+    border-right: 1px solid #eaecef;
+    border-bottom: 1px solid #eaecef;
+}
+
+@media (max-width: 767px) {
+    .post-content {
+        padding: 15px;
+    }
 }
