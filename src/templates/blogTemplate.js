@@ -5,6 +5,7 @@ import Link from 'gatsby-link';
 import Header from '../components/header';
 import SEO from '../components/seo';
 import Footer from '../components/footer';
+import ReactUtterences from 'react-utterances'
 import '../styles/partials/layouts/_blogTemplate.scss';
 
 export default function Template({
@@ -46,6 +47,7 @@ export default function Template({
                     class='post-content'
                     dangerouslySetInnerHTML={{ __html: html }}
                 />
+                <ReactUtterences repo={'FOSSNSS/comment'} type={'url'} />
             </div>
             <Footer />
         </div>

@@ -5,6 +5,7 @@ import { graphql } from 'gatsby';
 import Header from '../components/header';
 import SEO from '../components/seo';
 import Footer from '../components/footer';
+
 import '../styles/partials/layouts/_blog.scss';
 import Img from 'gatsby-image';
 
