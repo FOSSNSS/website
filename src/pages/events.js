@@ -13,27 +13,29 @@ const EventPage = ({ data }) => (
         <SEO title='Events' />
         <Header />
         <div className='site-content'>
-            <h1 className="center">Latest Events</h1>
-            <div className='event-container'>
-                {data.allMarkdownRemark.edges.map(post => (
-                    <Link to={post.node.frontmatter.path} className='link'>
-                        <div key={post.node.id} className='event-card'>
-                            <Img
-                                style={{ height: '100%' }}
-                                fluid={
-                                    post.node.frontmatter.cover.childImageSharp
-                                        .fluid
-                                }
-                            />
-                            <center>
-                                <h3>{post.node.frontmatter.title}</h3>
-                                <small> {post.node.frontmatter.date}</small>
-                                <br />
-                                <br />
-                            </center>
-                        </div>
-                    </Link>
-                ))}
+            <div className="event-list">
+                <h1 className="center">Latest Events</h1>
+                <div className='event-container'>
+                    {data.allMarkdownRemark.edges.map(post => (
+                        <Link to={post.node.frontmatter.path} key={post.node.id} className='link'>
+                            <div key={post.node.id} className='event-card'>
+                                <Img
+                                    style={{ height: '100%' }}
+                                    fluid={
+                                        post.node.frontmatter.cover.childImageSharp
+                                            .fluid
+                                    }
+                                />
+                                <center>
+                                    <h3>{post.node.frontmatter.title}</h3>
+                                    <small><span role="img" aria-label="On Date">📅: </span> {post.node.frontmatter.date}</small>
+                                    <br />
+                                    <br />
+                                </center>
+                            </div>
+                        </Link>
+                    ))}
+                </div>
             </div>
         </div>
         <Footer />

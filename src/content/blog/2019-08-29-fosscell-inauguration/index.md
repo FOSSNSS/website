@@ -6,7 +6,7 @@ tag: "Inauguration"
 author: "athulkpm"
 name: "Athul Krishnan P M"
 title: "The Beginning - Inauguration"
-desc: "A story from my prespective on how we introduced our FOSS Cell to the world"
+desc: "A story on how we introduced our FOSS NSS"
 ---
 
 
