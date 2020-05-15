@@ -20,7 +20,7 @@ module.exports = {
                 background_color: `#2980b9`,
                 theme_color: `#2980b9`,
                 display: `standalone`,
-                icon: `src/images/foss-icon.png`, // This path is relative to the root of the site.
+                icon: `assets/images/foss-icon.png`, // This path is relative to the root of the site.
             },
         },
         'gatsby-plugin-catch-links',
@@ -34,7 +34,7 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-                path: `${__dirname}/src/content`,
+                path: `${__dirname}/contents`,
                 name: `markdown-pages`,
             },
         },
@@ -42,9 +42,16 @@ module.exports = {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `images`,
-                path: `${__dirname}/src/images`,
+                path: `${__dirname}/assets/images`,
             },
         },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `gallery`,
+                path: `${__dirname}/contents/gallery`, 
+            },
+         },
         {
             resolve: 'gatsby-transformer-remark',
             options: {
