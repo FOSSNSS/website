@@ -30,7 +30,7 @@ class Header extends Component {
                 <nav>
                     <Logo />
                     <NavLinks />
-                    <div className='burger' onClick={this.toggleClass}>
+                    <div role="button" tabIndex={0} className='burger' onClick={this.toggleClass} onKeyDown={this.toggleClass}>
                         <div className='line1'></div>
                         <div className='line2'></div>
                         <div className='line3'></div>

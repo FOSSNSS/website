@@ -40,7 +40,7 @@ const NavLinks = () => {
                     Troop
                 </Link>
             </li>
-            <div onMouseLeave={deactivateDropdown}>
+            <div role="button" onMouseLeave={deactivateDropdown} tabIndex={0}>
                 <button className='accordion' onMouseEnter={activateDropdown}>
                     <span className={active ? 'arrow activate-arrow' : 'arrow'}>
                         <span />

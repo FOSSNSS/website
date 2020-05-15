@@ -9,9 +9,9 @@ const MobNavLinks = props => {
     }
     return (
         <ul className={props.activateStatus}>
-            <li onClick={props.action}>
+            <li>
                 <p>
-                    <Link to='/' activeClassName='mobactive-link'>
+                    <Link onClick={props.action} to='/' activeClassName='mobactive-link'>
                         Home
                     </Link>
                 </p>
