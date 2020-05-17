@@ -42,10 +42,7 @@ const NavLinks = () => {
             </li>
             <div role="button" onMouseLeave={deactivateDropdown} tabIndex={0}>
                 <button className='accordion' onMouseEnter={activateDropdown}>
-                    <span className={active ? 'arrow activate-arrow' : 'arrow'}>
-                        <span />
-                        <span />
-                    </span>
+                    <div className={active ? 'button activate-button':'button'} />
                 </button>
                 <NestedList
                     activateStatus={
@@ -67,17 +64,6 @@ const NestedList = props => (
                     partiallyActive={true}
                     onClick={props.action}>
                     About
-                </Link>
-            </p>
-        </li>
-        <li>
-            <p>
-                <Link
-                    to='/acheivements'
-                    activeClassName='mobactive-link'
-                    partiallyActive={true}
-                    onClick={props.action}>
-                    Achievements
                 </Link>
             </p>
         </li>

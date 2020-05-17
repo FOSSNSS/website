@@ -10,18 +10,18 @@ class Header extends Component {
         this.state = {
             isToggleOn: false,
         };
-
+        console.log(props)
         // This binding is necessary to make `this` work in the callback
         this.toggleClass = this.toggleClass.bind(this);
     }
 
     toggleClass() {
-		console.log(`state ${this.state.isToggleOn}`);
+        console.log(`state ${this.state.isToggleOn}`);
 
         this.setState(state => (
-			{
-            isToggleOn: !state.isToggleOn,
-        }));
+            {
+                isToggleOn: !state.isToggleOn,
+            }));
     }
 
     render() {
@@ -30,10 +30,16 @@ class Header extends Component {
                 <nav>
                     <Logo />
                     <NavLinks />
-                    <div role="button" tabIndex={0} className='burger' onClick={this.toggleClass} onKeyDown={this.toggleClass}>
-                        <div className='line1'></div>
-                        <div className='line2'></div>
-                        <div className='line3'></div>
+                    <div
+                        role="button"
+                        tabIndex={0}
+                        onClick={this.toggleClass}
+                        onKeyDown={this.toggleClass}
+                        className={this.state.isToggleOn ? 'menu activate-menu' : 'menu'}
+                    >
+                        <div className="bar"></div>
+                        <div className="bar"></div>
+                        <div className="bar"></div>
                     </div>
                 </nav>
                 <MobNavLinks
@@ -41,8 +47,8 @@ class Header extends Component {
                         this.state.isToggleOn
                             ? 'onmobile activate-mob'
                             : 'onmobile'
-					}
-					action={this.toggleClass}
+                    }
+                    action={this.toggleClass}
                 />
             </div>
         );
