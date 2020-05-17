@@ -21,6 +21,7 @@
         position: relative;
         width: 100%;
         .event-card{
+            height: 300px;
             margin: 20px;
             padding: 10px;
             max-width: 260px;
@@ -30,6 +31,9 @@
             transition: 0.3s;
             display: grid;
             align-items: center;
+            .gatsby-image-wrapper{
+                height: 200px;
+            }
         }
         .event-card:hover{
             box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);

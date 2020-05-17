@@ -2,7 +2,7 @@
 path: /events/3d-modeling-with-blender
 date: "2019-10-23"
 author: "maze-n"
-title: "3D Modeling - Blender"
+title: "3D Modeling with Blender"
 cover: "./poster.png"
 name: "Mazen Maliyakkal"
 ---
@@ -27,14 +27,14 @@ The Free And Open Source Software Cell is organizing a 2 hour session workshop o
 
 To register, follow the link below:
 
-https://kutt.it/3dworkshop
+https://kutt.it/3dworkshop (Expired)
 
 ## Contact
 
 For more queries ,please contact:
 
-Hazil :7012503191
-Mazen :8078043478
+Hazil: 7012503191
+Mazen: 8078043478
 
 *NOTE: Participants are required to bring a laptop with them (With Blender software installed)*
 
