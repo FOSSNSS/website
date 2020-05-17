@@ -11,7 +11,7 @@ name: "Denil C V"
 
 The FOSS Cell  of NSS College of Engineering is planned to be inaugurated on 29<sup>th</sup> August 2019, in association with iEDC.
 
-**Mr.Praveen Arimbrathodiyil** will be our chief guest and the official announcement will be done by **Mrs.Sruthy Chandran**, both being active Debian Developers. There will also be a session on **Privacy Yathra**, Which is an initiative by free software community to create awareness about privacy and federated social media options across Kerala..
+**Mr.Praveen Arimbrathodiyil** will be our chief guest and the official announcement will be done by **Mrs.Sruthy Chandran**, both being active Debian Developers. There will also be a session on **Privacy Yathra**, Which is an initiative by free software community to create awareness about privacy and federated social media options across Kerala.
 
 
 ## Venue
