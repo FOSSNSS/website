@@ -21,6 +21,10 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 10;
+    a {
+        display: block;
+        margin-left: 20px;
+    }
     .nav-links {
         display: flex;
         width: 30%;
@@ -184,6 +188,7 @@ nav {
         overflow-x: hidden;
     }
     nav {
+        justify-content: space-between;
         .nav-links {
             display: none;
         }
@@ -356,4 +361,7 @@ nav {
 
 .menu {
     display: none;
+    &:focus {
+        outline: none;
+    }
 }
