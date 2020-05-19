@@ -3,12 +3,13 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 70vh;
+    height: 100vh;
     margin: 2% 7%;
+    background-color: #f7fafc;
     .herotext {
         h1 {
             font-size: 2.1rem;
-            color: #373d3f;
+            color: $element-dark;
             margin-bottom: 0;
             flex-basis: 50%;
         }

@@ -16,7 +16,7 @@ nav {
     align-items: center;
     min-height: 75px;
     max-height: 80px;
-    background-color: #ffffff;
+    background-color: $white;
     box-shadow: 0 2px 20px -10px rgba(56, 56, 56, 0.452);
     position: fixed;
     width: 100%;
@@ -35,7 +35,7 @@ nav {
             list-style: none;
         }
         a {
-            color: #373d3f;
+            color: $element-dark;
             text-decoration: none;
             letter-spacing: 2px;
             font-weight: 500;
@@ -44,30 +44,13 @@ nav {
             transition: 0.5s color ease-in-out;
 
             &:hover {
-                color: #2980b9;
+                color: $pen-sandal;
             }
         }
 
         .active-link {
-            color: #2980b9;
-            border-bottom: 3px solid #2980b9;
-        }
-    }
-
-    .burger {
-        display: none;
-        box-sizing: border-box;
-        width: 59px;
-        height: 55px;
-        padding: 15px;
-        border-radius: 50%;
-        background: linear-gradient(45deg, #2980b9, #3498db);
-        div {
-            width: 30px;
-            height: 3px;
-            background-color: #fff;
-            margin: 0;
-            margin-bottom: 7px;
+            color: $pri-orange;
+            border-bottom: 3px solid $pen-sandal;
         }
     }
 }
@@ -78,8 +61,8 @@ nav {
 }
 
 .accordion {
-    background-color: #fff;
-    color: #373d3f;
+    background-color: $white;
+    color: $element-dark;
     cursor: pointer;
     width: auto;
     border: none;
@@ -122,15 +105,16 @@ nav {
     }
 }
 
+// Styles for the plus arrow on Larger screens navigation
 .activate-button {
     cursor: pointer;
     &:before {
         transform: rotate(90deg);
-        background-color: #2980b9;
+        background-color: $pri-orange;
     }
     &:after {
         transform: rotate(180deg);
-        background-color: #2980b9;
+        background-color: $pri-orange;
     }
 }
 
@@ -147,7 +131,7 @@ nav {
     box-shadow: 0 2px 20px -10px rgba(56, 56, 56, 0.452);
     li {
         list-style: none;
-        background-color: #fff;
+        background-color: $white;
         p {
             margin: 0;
             text-align: center;
@@ -157,8 +141,8 @@ nav {
             text-align: center;
             padding: 15px 15px;
             text-decoration: none;
-            background-color: #fff;
-            color: #373d3f;
+            background-color: $white;
+            color: $element-dark;
         }
     }
 }
@@ -166,10 +150,15 @@ nav {
 .activate-nestedList {
     transform: translateY(-75px);
     margin-top: 70px;
+    padding: 0;
 }
 
-.nestedListActive-link {
-    color: #2980b9 !important;
+
+.menu {
+    display: none;
+    &:focus {
+        outline: none;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -209,7 +198,7 @@ nav {
         box-shadow: 0 2px 20px -10px rgba(56, 56, 56, 0.452);
         li {
             list-style: none;
-            background-color: #fff;
+            background-color: $white;
             p {
                 margin: 0;
                 text-align: center;
@@ -219,8 +208,8 @@ nav {
                 text-align: center;
                 padding: 15px 100px;
                 text-decoration: none;
-                background-color: #fff;
-                color: #373d3f;
+                background-color: $white;
+                color: $element-dark;
             }
         }
     }
@@ -229,14 +218,14 @@ nav {
         width: 100%;
     }
     .accordion:hover {
-        color: #373d3f;
+        color: $element-dark;
     }
     .activate-accordion {
-        background-color: #2980b9;
-        color: #fff;
+        background-color: $pri-orange;
+        color: $white;
     }
     .activate-accordion:hover {
-        color: #fff;
+        color: $white;
     }
     .nestedList,
     .activate-nestedList {
@@ -259,7 +248,7 @@ nav {
             justify-content: space-between;
             margin: 5px auto 10px auto;
             position: absolute;
-            background-color: #2980b9;
+            background-color: $pri-orange;
             @include border-radius(10px);
             @include transition(0.3s);
             &:nth-of-type(1) {
@@ -315,7 +304,7 @@ nav {
 }
 
 .mobactive-link {
-    color: #2980b9 !important;
+    color: $pri-orange !important;
 }
 
 .arrow {
@@ -330,7 +319,7 @@ nav {
         position: absolute;
         width: 0.75rem;
         height: 0.1rem;
-        background-color: #373d3f;
+        background-color: $element-dark;
         display: inline-block;
         transition: all 0.2s ease;
 
@@ -345,23 +334,3 @@ nav {
     }
 }
 
-.activate-arrow {
-    span {
-        &:first-of-type {
-            transform: rotate(-45deg);
-            background-color: #2980b9;
-        }
-        &:last-of-type {
-            transform: rotate(45deg);
-            background-color: #2980b9;
-        }
-    }
-}
-
-
-.menu {
-    display: none;
-    &:focus {
-        outline: none;
-    }
-}
