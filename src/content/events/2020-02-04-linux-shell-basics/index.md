@@ -1,6 +1,7 @@
 ---
 path: /events/linux-shell-baiscs
 date: "2020-02-04"
+datestring: "04 February 2020"
 author: "abbyck"
 title: "Linux Shell Basics"
 cover: "./linux-shell.png"

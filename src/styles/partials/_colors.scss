@@ -1,3 +1,47 @@
 $header-nav: #14212e;
 
 $footer-color: #2c3e50;
+
+
+
+// Color scheme starts here
+$pri-orange: #f87c56;
+
+$sec-pink: #df2760;
+
+$ter-yellow: #fbb53f;
+
+$qua-pink: #ef4462;
+
+$pen-sandal: #e78317;
+
+$hex-blue: #2980b9;
+
+$cloud-white: #ecf0f1;
+
+$cta-cloud: #f6f8fa;
+// Color scheme ends here
+
+
+
+// Some general colors
+
+$white: #ffffff;
+
+$element-dark: #2e384d;
+
+$nonelement-dark: #6e6e6e;
+
+$bg-white: #f7fafc;
+
+.colored-icon-pink {
+    color: $sec-pink;
+}
+
+.colored-icon-ora {
+    color: $pen-sandal;
+}
+
+.authcolor {
+    color: $nonelement-dark;
+}

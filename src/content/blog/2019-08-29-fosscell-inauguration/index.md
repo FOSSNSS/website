@@ -1,6 +1,7 @@
 ---
 path: /blog/inauguration
 date: "2019-08-28"
+datestring: "28 August 2019"
 cover: "./light.jpg"
 tag: "Inauguration"
 author: "athulkpm"

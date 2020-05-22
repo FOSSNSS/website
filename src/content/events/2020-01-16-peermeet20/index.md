@@ -1,6 +1,7 @@
 ---
 path: /events/peermeet20
 date: "2020-01-16"
+datestring: "16 January 2020"
 author: "tupio"
 title: "Peer Meet"
 cover: "./poster2.jpeg"

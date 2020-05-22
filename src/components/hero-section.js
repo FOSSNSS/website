@@ -16,26 +16,32 @@ export default () => (
             }
         `}
         render={data => (
-            <div className='herosect'>
-                <div className='herotext'>
-                    <h1>Free and Open Source <br />Software Cell</h1>
+            <div className='hero-sect'>
+                <div className='hero-text'>
+                    <p className="hero-desc">
+                        A collective of students to bring out freedom through
+                 inspiration,<br /> building skills for collaboration
+                 and spreading of FOSS including its ideology.
+                 </p>
+
+                    <h1>Free and Open Source Software cell NSSCE</h1>
                     <br />
-					<p className="herodesc">A collective of students to bring out freedom and liberation through inspiring and creating skills for collaboration and spreading of FOSS and it's culture.</p>
-                    <div className='buttons'>
-                        <a
-                            href='https://forms.gle/sWCU2L2KYpGmTZzg8'
-                            className='btn btn-active'>
-                            Become a Member
+                    <a
+                        href='https://kutt.it/becomemember'
+                        className='cta-btn lined thin'>
+                        BECOME A MEMBER
                         </a>
-                        <Link to='/about' className='btn btn-ghost'>
-                            Know More
-                        </Link>
-                    </div>
+                    <br />
+                    <p className="marginfix">&nbsp;</p>
+                    <Link to='/about' className='cta-sec'>
+                        Learn More
+                    </Link>
+                    &nbsp;about FOSSNSS
                 </div>
-                <div className='heroimage'>
+                <div className='hero-imgcontainer'>
                     <Img
                         fluid={data.heroImgLoc.childImageSharp.fluid}
-                        className='heroimg'
+                        className='hero-img'
                     />
                 </div>
             </div>

@@ -1,1 +1,13 @@
-$font: 'Montserrat';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Roboto&display=swap');
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+$font: 'Roboto';
+
+$heading-font: 'Open Sans';
+
+
+h1, h2, h3, h4, h5 {
+    font-family: $heading-font, 'sans-serif';
+}
+

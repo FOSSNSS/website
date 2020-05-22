@@ -1,6 +1,7 @@
 ---
 path: /events/3d-modeling-with-blender
 date: "2019-10-23"
+datestring: "23 October 2019"
 author: "maze-n"
 title: "3D Modeling with Blender"
 cover: "./poster.png"

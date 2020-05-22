@@ -21,7 +21,7 @@ export default function Template({
             <div className='site-content'>
                 <div className="post-content">
                     <p className='breadcrumps'>
-                        <span role="img" aria-label="Feels like lost? You are here">🤔 🧭 </span>: {' '}
+                        <span role="img" aria-label="Feels like lost? You are here">🧭 </span>: {' '}
                         <Link to='/' className='breadlink'>
                             Home
                     </Link>{' '}
@@ -29,7 +29,7 @@ export default function Template({
                         <Link to='/blog' className='breadlink'>
                             Blog
                     </Link>{' '}
-                    >> <span className="breadcurrentloc">{`${frontmatter.title.slice(0, 15)}`}....</span>
+                    >> <span className="breadcurrentloc">{`${frontmatter.title.slice(0, 15)}`}...</span>
                     </p>
                     <h1 className="templateH1">{frontmatter.title}</h1>
                     <h2 className='desc'>{frontmatter.desc}</h2>
@@ -39,8 +39,8 @@ export default function Template({
                             alt={`Avathar of ${frontmatter.name}`}
                         />
                         <div>
-                            <p><b><span role="img" aria-label="Penned by">🖋️</span> : {frontmatter.name}</b></p>
-                            <p><b><span role="img" aria-label="Date">🗓️</span> : {frontmatter.date}</b></p>
+                            <p><i class="fa fa-pencil colored-icon-pink" aria-hidden="true"></i> {frontmatter.name}</p>
+                            <p><i class="fa fa-calendar-o colored-icon-ora" aria-hidden="true"></i> {frontmatter.datestring}</p>
                         </div>
                     </div>
                     <div className="simpleline"></div>
@@ -74,6 +74,7 @@ export const postQuery = graphql`
                 author
                 name
                 date
+                datestring
                 desc
             }
         }

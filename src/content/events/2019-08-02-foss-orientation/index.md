@@ -1,8 +1,9 @@
 ---
 path: /events/foss-fossnss-orientation-for-freshers
 date: "2019-08-02"
+datestring: "02 August 2019"
 author: "maze-n"
-title: "FOSS Orientation for freshers"
+title: "FOSS Orientation"
 cover: "./orientation.png"
 name: "Mazen Maliyakkal"
 ---

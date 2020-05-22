@@ -1,6 +1,7 @@
 ---
 path: /events/learn-flask-by-building-a-crud-application
 date: "2020-02-18"
+datestring: "18 February 2020"
 author: "tupio"
 title: "Introduction to Python Flask"
 cover: "./python-flask-intro.png"

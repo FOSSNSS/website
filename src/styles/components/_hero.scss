@@ -1,85 +1,115 @@
-.herosect {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 70vh;
-    margin: 2% 7%;
-    .herotext {
-        h1 {
-            font-size: 2.1rem;
-            color: #373d3f;
-            margin-bottom: 0;
-            flex-basis: 50%;
+@import '../partials/base';
+
+.hero-sect {
+    // border: 1px solid red;
+    height: 92vh;
+    position: relative;
+    width: 80%;
+
+    .hero-text {
+        color: $element-dark;
+        float: left;
+        clear: both;
+        position: absolute;
+        left: 15%;
+        margin-left: -75px;
+        top: 17%;
+        margin-top: -75px;
+        z-index: 2;
+
+        & h1 {
+            margin-bottom: 30px;
         }
-        .herodesc {
-            margin-top: 0;
-            width: 85%;
-            text-align: justify;
-        }
-        .buttons {
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            .btn {
-                
-                box-sizing: border-box;
-                margin: 20px;
-                padding: 15px 20px;
-                text-decoration: none;
-                border-radius: 35px;
-            }
-            .btn-active {
-                background: linear-gradient(45deg, #2980b9, #3498db);
-                color: #fff;
-				transition: 0.5s all linear;
-				border: 1px solid #fff;
-                &:hover {
-                    background: linear-gradient(45deg, #fff, #fff);
-                    // border: 1px solid #2980b9;
-					color: #373d3f;
-					border: 1px solid #2980b9;
-                }
-            }
-            .btn-ghost {
-                background-color: #fff;
-                padding: 15px 50px;
-                color: #373d3f;
-				transition: 0.5s all linear;
-				border: 1px solid #2980b9;
-                &:hover {
-                    background: linear-gradient(45deg, #2980b9, #3498db);
-                    color: #fff;
-                }
-            }
+
+        .marginfix {
+            margin: 10px;
         }
     }
 
-    .heroimage {
-        max-width: 100%;
-        width: 90vw;
-        height: auto;
+    .hero-desc {
+        color: $nonelement-dark;
     }
+
+    .hero-imgcontainer {
+        position: absolute;
+        width: 90%;
+        float: right;
+        margin: 20px;
+        bottom: 5%;
+        right: 0;
+    }
+
+    .cta-btn {
+        align-self: center;
+        text-decoration: none;
+        padding: 1rem 1rem;
+        margin: 10px 0;
+        transition: all 0.8s ease-in-out;
+        color: $white;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        outline: none;
+        box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
+        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+        /*
+        Above is shorthand for:
+        border-top-left-radius: 255px 15px;
+        border-top-right-radius: 15px 225px;
+        border-bottom-right-radius: 225px 15px;
+        border-bottom-left-radius:15px 255px;
+        */
+        background: linear-gradient(45deg, $pri-orange, $qua-pink);
+
+        &:hover {
+            box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
+            background: transparent;
+            color: $element-dark;
+        }
+
+        &.lined.thick {
+            border: solid 7px $ter-yellow;
+        }
+
+        &.lined.thin {
+            border-right: solid 2px $qua-pink;
+            border-left: solid 2px $pri-orange;
+            border-top: solid 2px $qua-pink;
+            border-bottom: solid 2px $pri-orange;
+        }
+    }
+
+    .cta-sec {
+        text-decoration: none;
+        color: $hex-blue;
+        margin-left: 2px;
+        font-weight: 900;
+        font-family: 'sans-serif';
+    }
+
 }
 
 @media screen and (max-width: 768px) {
-    .herosect {
-        flex-wrap: wrap;
-        .heroimage {
-            margin-top: 20px;
+    .hero-sect {
+        width: 100%;
+
+        .hero-imgcontainer {
+            width: 95%;
+            bottom: 10%;
         }
-        .herotext {
-            h1 {
-                font-weight: 100;
+
+        .hero-text {
+            top: 20%;
+            left: 20%;
+            text-align: center;
+
+            & h1 {
+                margin-bottom: 45px;
+                text-align: center;
             }
-            .herodesc {
-                width: 100%;
-            }
-            .buttons {
-                .btn {
-                    margin: 10px 20px;
-                }
-            }
+        }
+
+        & br {
+            display: none;
         }
     }
 }

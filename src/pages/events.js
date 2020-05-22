@@ -14,7 +14,9 @@ const EventPage = ({ data }) => (
         <Header />
         <div className='site-content'>
             <div className="event-list">
-                <h1 className="center">Latest Events</h1>
+                <div className="blog-heading">
+                        <h1 class="underline-small">Latest Events</h1>
+                </div>
                 <div className='event-container'>
                     {data.allMarkdownRemark.edges.map(post => (
                         <Link to={post.node.frontmatter.path} key={post.node.id} className='link'>
@@ -22,16 +24,11 @@ const EventPage = ({ data }) => (
                                 <Img
                                     style={{ height: '100%' }}
                                     fluid={
-                                        post.node.frontmatter.cover.childImageSharp
-                                            .fluid
+                                        post.node.frontmatter.cover.childImageSharp.fluid
                                     }
                                 />
-                                <center>
-                                    <h3>{post.node.frontmatter.title}</h3>
-                                    <small><span role="img" aria-label="On Date">📅: </span> {post.node.frontmatter.date}</small>
-                                    <br />
-                                    <br />
-                                </center>
+                                <h3>{post.node.frontmatter.title}</h3>
+                                <p><i class="fa fa-calendar-o colored-icon-ora" aria-hidden="true"></i> {post.node.frontmatter.datestring}</p>
                             </div>
                         </Link>
                     ))}
@@ -64,6 +61,7 @@ export const pageQuery = graphql`
                         }
                         title
                         date
+                        datestring
                         author
                     }
                 }

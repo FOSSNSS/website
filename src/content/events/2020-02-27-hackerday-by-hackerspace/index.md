@@ -1,6 +1,7 @@
 ---
 path: /events/hackerday-by-hackerspace
 date: "2020-02-27"
+datestring: "27 February 2020"
 author: "vishnuedavarath"
 title: "HackerDay by HackerSpace"
 cover: "./hackerday.png"
