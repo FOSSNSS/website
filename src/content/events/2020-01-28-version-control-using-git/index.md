@@ -1,6 +1,7 @@
 ---
 path: /events/version-control-using-git
 date: "2020-01-28"
+datestring: "28 January 2020"
 author: "HazilMohamed"
 title: "Intro to Version Control"
 cover: "./vcs-git.png"

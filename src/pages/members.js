@@ -11,14 +11,18 @@ const SecondPage = ({ data }) => (
         <SEO title='Meet the Team' />
         <Header />
         <div className='member-mainbody'>
-            <h3 className='member-heading'>Meet our Team</h3>
+        <div className="member-heading">
+                        <h1 class="underline-small">Meet Our Team</h1>
+                </div>
+            {/* <h3 className='member-heading'>Meet our Team</h3> */}
             <div className='scoordinator'>
                 <div className='coordinator'>
-                    <a href='https://in.linkedin.com/in/syam-sankar-134b70110'>
+                    <a href='https://www.researchgate.net/profile/Syam_Sankar3'>
                         <Img
                             fluid={data.imgStaffCo.childImageSharp.fluid}
                             className='profile-pic'
                         />
+                        {/* <div className='profile-pic'></div> */}
                         <h5>Syam Sankar</h5>
                         <h6>Staff Co-ordinator</h6>
                     </a>

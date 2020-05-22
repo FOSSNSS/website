@@ -1,6 +1,7 @@
 ---
 path: /blog/blender-workshop
 date: "2019-11-18"
+datestring: "18 November 2019"
 cover: "./cover.jpg"
 tag: "Blender Workshop"
 author: "hazilMohamed"

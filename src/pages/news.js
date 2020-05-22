@@ -11,12 +11,12 @@ const SecondPage = () => (
         <Header />
         <div className='site-content'>
             <h1>Page Under construction</h1>
-            <h3>Here are some History lessons</h3>
+            <h3>News page</h3>
             <ul>
-                <li>1st part</li>
-                <li>2nd part</li>
-                <li>3rd part</li>
-                <li>4th part</li>
+                <li>News 1</li>
+                <li>News 2</li>
+                <li>News 3</li>
+                <li>News 4</li>
             </ul>
         </div>
         <Footer />

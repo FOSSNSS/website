@@ -19,7 +19,10 @@ export default function Template({
             <div className='site-content'>
 
                 <div className="post-content">
-                    <h1 className="center">Latest Posts</h1>
+                    <div className="blog-heading">
+                        <h1 class="underline-small">Latest Posts</h1>
+                    </div>
+
                     <div className='container'>
                         {data.allMarkdownRemark.edges.map(post => (
                             <Link className='link' to={post.node.frontmatter.path}>
@@ -37,14 +40,14 @@ export default function Template({
                                     <div className='cardbody'>
                                         <h3>{post.node.frontmatter.title}</h3>
                                         <span>{post.node.frontmatter.desc}</span>
-                                        <div className="post-author">
+                                        <div className="post-author author-dec">
                                             <img
                                                 src={`https://github.com/${post.node.frontmatter.author}.png?size=70`}
                                                 alt={`Avathar of ${post.node.frontmatter.name}`}
                                             />
                                             <div>
-                                                <p>By {post.node.frontmatter.name}</p>
-                                                <p>On {post.node.frontmatter.date}</p>
+                                                <p className="authcolor"><i class="fa fa-pencil colored-icon-pink" aria-hidden="true"></i> {post.node.frontmatter.name}</p>
+                                                <p className="authcolor"><i class="fa fa-calendar-o colored-icon-ora" aria-hidden="true"></i> {post.node.frontmatter.datestring}</p>
 
                                             </div>
                                         </div>
@@ -86,6 +89,7 @@ export const pageQuery = graphql`
                         tag
                         title
                         date
+                        datestring
                         author
                     }
                     timeToRead

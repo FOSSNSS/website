@@ -1,6 +1,7 @@
 ---
 path: /events/inagruation
 date: "2019-08-29"
+datestring: "29 August 2019"
 author: "tupio"
 title: "FOSS Cell Inauguration"
 cover: "./poster.jpeg"

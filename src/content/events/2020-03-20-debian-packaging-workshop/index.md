@@ -1,6 +1,7 @@
 ---
 path: /events/debian-packaging-workshop
 date: "2020-03-20"
+datestring: "20 March 2020"
 author: "abbyck"
 title: "Debian Packaging Workshop"
 cover: "./Debian-Workshop.png"
