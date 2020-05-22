@@ -1,0 +1,74 @@
+.membcta {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px -30px 29px 0px rgba(246, 248, 250, 1);
+    background: linear-gradient(135deg, $cloud-white, $cta-cloud);
+
+    .membcta-main {
+        width: 80%;
+        // border: 1px solid red;
+        text-align: center;
+
+        h2{
+            font-weight: 300;
+        }
+
+        a {
+            color: $hex-blue;
+            font-weight: 600;
+        }
+
+        .cta-btn {
+            align-self: center;
+            text-decoration: none;
+            padding: 1rem 1rem;
+            margin: 10px 0;
+            transition: all 0.8s ease-in-out;
+            color: $nonelement-dark;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            outline: none;
+            box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            margin: 10px 0;
+            /*
+            Above is shorthand for:
+            border-top-left-radius: 255px 15px;
+            border-top-right-radius: 15px 225px;
+            border-bottom-right-radius: 225px 15px;
+            border-bottom-left-radius:15px 255px;
+            */
+            background: transparent;
+
+            &:hover {
+                box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
+                background: transparent;
+                color: $element-dark;
+            }
+
+            &.lined.thick {
+                border: solid 7px $ter-yellow;
+            }
+
+            &.lined.thin {
+                border-right: solid 2px $qua-pink;
+                border-left: solid 2px $pri-orange;
+                border-top: solid 2px $qua-pink;
+                border-bottom: solid 2px $pri-orange;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .membcta {
+        height: 300px;
+
+        .membcta-main {
+            width: 90%;
+        }
+    }
+}

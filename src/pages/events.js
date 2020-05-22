@@ -22,8 +22,7 @@ const EventPage = ({ data }) => (
                                 <Img
                                     style={{ height: '100%' }}
                                     fluid={
-                                        post.node.frontmatter.cover.childImageSharp
-                                            .fluid
+                                        post.node.frontmatter.cover.childImageSharp.fluid
                                     }
                                 />
                                 <center>

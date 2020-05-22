@@ -13,7 +13,7 @@ const MobNavLinks = props => {
             <li>
                 <p>
                     <Link onClick={props.action} to='/' activeClassName='mobactive-link'>
-                        Home
+                        HOME
                     </Link>
                 </p>
             </li>
@@ -24,7 +24,7 @@ const MobNavLinks = props => {
                         activeClassName='mobactive-link'
                         partiallyActive={true}
                         onClick={props.action}>
-                        Blog
+                        BLOG
                     </Link>
                 </p>
             </li>
@@ -35,7 +35,7 @@ const MobNavLinks = props => {
                         activeClassName='mobactive-link'
                         partiallyActive={true}
                         onClick={props.action}>
-                        Events
+                        EVENTS
                     </Link>
                 </p>
             </li>
@@ -45,7 +45,7 @@ const MobNavLinks = props => {
                         to='/members'
                         activeClassName='mobactive-link'
                         partiallyActive={true}>
-                        Troop
+                        TROOP
                     </Link>
                 </p>
             </li>
@@ -55,7 +55,7 @@ const MobNavLinks = props => {
                         active ? 'accordion activate-accordion' : 'accordion'
                     }
                     onClick={changeState}>
-                    More
+                    MORE
                 </button>
                 <NestedList
                     activateStatus={
@@ -76,7 +76,7 @@ const NestedList = props => (
                     activeClassName='mobactive-link'
                     partiallyActive={true}
                     onClick={props.action}>
-                    About
+                    ABOUT
                 </Link>
             </p>
         </li>
@@ -86,7 +86,7 @@ const NestedList = props => (
                     to='/news'
                     activeClassName='mobactive-link'
                     partiallyActive={true}>
-                    News
+                    NEWS
                 </Link>
             </p>
         </li>

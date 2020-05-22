@@ -24,7 +24,7 @@ const Footer = () => (
 			</div>
 		</div>
         <div className='footer'>
-            <p>FOSS NSS &copy; 2019</p>
+            <p>with &hearts; FOSS NSS &#127279; 2019</p>
         </div>
     </footer>
 );

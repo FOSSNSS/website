@@ -13,7 +13,7 @@ const NavLinks = () => {
         <ul className='nav-links'>
             <li>
                 <Link to='/' activeClassName='active-link'>
-                    Home
+                    HOME
                 </Link>
             </li>
             <li>
@@ -21,7 +21,7 @@ const NavLinks = () => {
                     to='/blog'
                     activeClassName='active-link'
                     partiallyActive={true}>
-                    Blog
+                    BLOG
                 </Link>
             </li>
             <li>
@@ -29,7 +29,7 @@ const NavLinks = () => {
                     to='/events'
                     activeClassName='active-link'
                     partiallyActive={true}>
-                    Events
+                    EVENTS
                 </Link>
             </li>
             <li>
@@ -37,7 +37,7 @@ const NavLinks = () => {
                     to='/members'
                     activeClassName='active-link'
                     partiallyActive={true}>
-                    Troop
+                    TROOP
                 </Link>
             </li>
             <div role="button" onMouseLeave={deactivateDropdown} tabIndex={0}>
@@ -63,7 +63,7 @@ const NestedList = props => (
                     activeClassName='mobactive-link'
                     partiallyActive={true}
                     onClick={props.action}>
-                    About
+                    ABOUT
                 </Link>
             </p>
         </li>
@@ -73,7 +73,7 @@ const NestedList = props => (
                     to='/news'
                     activeClassName='mobactive-link'
                     partiallyActive={true}>
-                    News
+                    NEWS
                 </Link>
             </p>
         </li>

@@ -1,0 +1,93 @@
+.event-sect {
+    // border: 1px solid blue;
+    height: 490px;
+    position: relative;
+    width: 80%;
+
+    .event-text {
+        // border: 1px solid red;
+        text-align: center;
+        width: 100%;
+
+        .underline-small {
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            color: $element-dark;
+            display: inline-block;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .underline-small::after {
+            content: '';
+            height: 3px;
+            width: 70px;
+            margin-top: 10px;
+            background: $pri-orange;
+            position: absolute;
+            left: calc(50% - 15%);
+            bottom: -5px;
+        }
+    }
+
+    .event-latest {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: space-around;
+
+        .event-list-link {
+            display: block;
+            text-decoration: none;
+            margin: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            padding: 12px;
+            border-radius: 5px;
+            transition: 0.3s box-shadow linear;
+            height: 265px;
+            &:hover {
+                box-shadow: 0 40px 70px -10px rgba(0, 0, 0, 0.25);
+            }
+
+            h3 {
+                color: $element-dark;
+            }
+
+            img {
+                vertical-align: middle;
+            }
+
+            span {
+                color: $nonelement-dark;
+                margin-left: 10px;
+            }
+
+            .event-card {
+                .event-img {
+                    height: 180px;
+                    border-top-left-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .event-sect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1150px;
+        width: 90%;
+
+        .event-latest {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+    }
+}
+

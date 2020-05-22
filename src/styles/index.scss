@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
-
 @import 'components/index';
 @import 'partials/base';
 
@@ -10,6 +8,7 @@ html {
     -webkit-font-smoothing: auto;
     -moz-osx-font-smoothing: auto;
     box-sizing: border-box;
+    color: $element-dark;
 }
 
 .mainbody {
@@ -57,7 +56,7 @@ code {
     background-color: #f7fafc;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .event-list {
         padding: 15px;
         display: flex;
@@ -66,7 +65,7 @@ code {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .post-content {
         padding: 15px;
     }
