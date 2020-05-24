@@ -13,7 +13,7 @@ export default function Template({
     const { frontmatter, html } = markdownRemark;
     return (
         <div className='mainbody'>
-            <SEO title={`${frontmatter.title} - Events - `} />
+            <SEO title={`${frontmatter.title} • Events`} />
             <Header />
             <div className='site-content'>
                 <div className="post-content">

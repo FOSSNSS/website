@@ -15,7 +15,7 @@ export default function Template({
     const { frontmatter, html } = markdownRemark;
     return (
         <div className='mainbody'>
-            <SEO title={`${frontmatter.title} - Blog - `} />
+            <SEO title={`${frontmatter.title} • Blog `} />
             <Header />
 
             <div className='site-content'>
