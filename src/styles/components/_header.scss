@@ -134,13 +134,14 @@ nav {
         list-style: none;
         background-color: $white;
         p {
-            margin: 0;
+            margin: 5px;
             text-align: center;
         }
         a {
             display: inline-block;
             text-align: center;
-            padding: 15px 15px;
+            padding: 10px 0;
+            margin-right: 18.25px;
             text-decoration: none;
             background-color: $white;
             color: $element-dark;
@@ -150,7 +151,7 @@ nav {
 
 .activate-nestedList {
     transform: translateY(-75px);
-    margin-top: 70px;
+    margin-top: 75px;
     padding: 0;
 }
 
