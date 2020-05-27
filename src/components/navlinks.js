@@ -77,6 +77,16 @@ const NestedList = props => (
                 </Link>
             </p>
         </li>
+        <li>
+            <p>
+                <Link
+                to='/gallery'
+                activeClassName='mobactive-link'
+                partiallyActive={true}>
+                GALLERY
+            </Link>
+            </p>
+        </li>
     </ul>
 );
 
