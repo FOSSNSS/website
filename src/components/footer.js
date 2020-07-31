@@ -24,7 +24,7 @@ const Footer = () => (
 			</div>
 		</div>
         <div className='footer'>
-            <p>with &hearts; FOSS NSS &#127279; 2019</p>
+            <p>with &hearts; FOSS NSS &#127279; {(new Date().getFullYear())}</p>
         </div>
     </footer>
 );
