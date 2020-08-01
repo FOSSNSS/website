@@ -63,7 +63,7 @@ nav {
 
 .accordion {
     background-color: $white;
-    color: $element-dark;
+    color: $nonelement-dark;
     cursor: pointer;
     width: auto;
     border: none;
@@ -303,6 +303,10 @@ nav {
 .activate-mob {
     transform: translateY(0);
     margin-top: 75px;
+}
+
+.grey{
+    color: $footer-color;
 }
 
 .mobactive-link {

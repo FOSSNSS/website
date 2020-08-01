@@ -7,7 +7,7 @@ const MobNavLinks = props => {
         if (!active) setActive(true);
         else setActive(false);
     }
-    
+
     return (
         <ul className={props.activateStatus}>
             <li>
@@ -49,6 +49,17 @@ const MobNavLinks = props => {
                     </Link>
                 </p>
             </li>
+            <li>
+                <p>
+                    <Link
+                        to='/about'
+                        activeClassName='mobactive-link'
+                        partiallyActive={true}
+                        onClick={props.action}>
+                        ABOUT
+                </Link>
+                </p>
+            </li>
             <div>
                 <button
                     className={
@@ -69,17 +80,7 @@ const MobNavLinks = props => {
 
 const NestedList = props => (
     <ul className={props.activateStatus}>
-        <li>
-            <p>
-                <Link
-                    to='/about'
-                    activeClassName='mobactive-link'
-                    partiallyActive={true}
-                    onClick={props.action}>
-                    ABOUT
-                </Link>
-            </p>
-        </li>
+
         <li>
             <p>
                 <Link
@@ -93,10 +94,10 @@ const NestedList = props => (
         <li>
             <p>
                 <Link
-                to='/gallery'
-                activeClassName='mobactive-link'
-                partiallyActive={true}>
-                GALLERY
+                    to='/gallery'
+                    activeClassName='mobactive-link'
+                    partiallyActive={true}>
+                    GALLERY
             </Link>
             </p>
         </li>

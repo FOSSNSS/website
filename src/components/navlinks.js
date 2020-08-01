@@ -40,6 +40,15 @@ const NavLinks = () => {
                     TROOP
                 </Link>
             </li>
+            <li>
+                <Link
+                    to='/about'
+                    activeClassName='active-link'
+                    partiallyActive={true}>
+                    ABOUT
+                </Link>
+            </li>
+        
             <div role="button" onMouseLeave={deactivateDropdown} tabIndex={0}>
                 <button className='accordion' onMouseEnter={activateDropdown}>
                     <div className={active ? 'button activate-button':'button'} />
@@ -56,17 +65,6 @@ const NavLinks = () => {
 
 const NestedList = props => (
     <ul className={props.activateStatus}>
-        <li>
-            <p>
-                <Link
-                    to='/about'
-                    activeClassName='mobactive-link'
-                    partiallyActive={true}
-                    onClick={props.action}>
-                    ABOUT
-                </Link>
-            </p>
-        </li>
         <li>
             <p>
                 <Link
