@@ -171,6 +171,9 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+    .header-logo {
+        margin-left: 25px;
+    }
     .menu {
         display: block !important;
     }
