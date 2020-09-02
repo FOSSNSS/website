@@ -47,13 +47,17 @@ We have a great community of FOSS enthusiasts and activists ready to help whenev
 <p style="text-align: center"><em>I too took a few sessions :) </em></p>
 
 
-
 ## We are expanding!
 We would like to be more manure the idea of FOSS and let the roots reach the deep into the NSSCE soil. Not to perish but to proliferate. We would like you to know that we have a chance for everyone out there, with more interesting events and an opportunity for everyone to foster their skills. 
+
+
 
 Now we have a few more subdivisions under FOSSNSS so that everyone has a place. Building inner teams like this certainly helped in the destruction of the centralized architecture of FOSSNSS.
 
 1. HackerSpace - As the name suggests, this is a place for all the hackers and tinkerers of NSSCE. One of the aims of HaSp(We call HackerSpace as HaSp) is to bring more upstream contributions from FOSSNSS as well as NSSCE.
+
+![HackerDay by HackerSpace](./hackerday_hasp.jpg)
+<p style="text-align: center"><em>A snap from HackerDay by HackerSpace </em></p>
 
 2. OpenDesign - Deals with providing design guidelines to FOSSNSS and for everyone who likes to follow their stuff. OpenDesign will also act as a platform to educate people on FOSS Design tools and design languages. 
 
