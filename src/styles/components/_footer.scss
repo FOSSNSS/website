@@ -1,11 +1,12 @@
 @import '../partials/colors';
 
-.topfooter{
+.topfooter {
     background: linear-gradient(45deg, $qua-pink, $pri-orange);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    .sect1,.sect2 {
+    .sect1,
+    .sect2 {
         h2 {
             color: #fff;
             font-weight: 100;
@@ -13,16 +14,16 @@
             margin-bottom: 0;
             border-bottom: 2px solid #fff;
         }
-        ul{
+        ul {
             padding-left: 0;
-            li{
+            li {
                 list-style: none;
                 padding: 5px 0px;
-                a{
+                a {
                     color: #fff;
                     text-decoration: none;
                     transition: 0.2s all linear;
-                    &:hover{
+                    &:hover {
                         color: #2ecc71;
                     }
                 }
@@ -40,15 +41,26 @@
     align-items: center;
     p {
         color: #fff;
+        text-align: center;
+        padding: 5px 0px;
+        a {
+            color: #fff;
+            text-decoration: none;
+            transition: 0.2s all linear;
+            &:hover {
+                color: #2ecc71;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 768px) {
-    .topfooter{
+    .topfooter {
         margin-top: 0;
         flex-direction: column;
         align-items: start;
-        .sect2, .sect1{
+        .sect2,
+        .sect1 {
             margin-left: 20px;
         }
     }
