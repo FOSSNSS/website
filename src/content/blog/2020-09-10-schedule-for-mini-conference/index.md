@@ -20,6 +20,8 @@ We thank **NSS College of Engineering, Palakkad** and various FOSS communities i
 
 ## Schedule
 
+#### Date: 12th, 13th September 2020
+
 | Day -1                                       | Start    | End      | Presenter                    |
 | -------------------------------------------- | -------- | -------- | ---------------------------- |
 | Inauguration                                 | 10:30 AM | 11:30 AM | Prof. Nanda Kumar P, Dean UG |
