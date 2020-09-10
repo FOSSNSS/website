@@ -12,7 +12,7 @@ desc: 'Event details for our first mini conference'
 
 # FOSSNSS 1st Anniversary
 
-It has been a very long journey and we would like to celebrate this moment. We the FOSS Cell NSSCE is organising a 2 day event to celebrate this milestone with various talks from renounced personalities form the FOSS community.
+It has been a very long journey and we would like to celebrate this moment. We the FOSS Cell NSSCE is organising a 2 day event to celebrate this milestone with various talks from renounced personalities form the FOSS community. The event will be inaugurated by **Prof. Nanda Kumar P**, Dean UG (Professor of Electronics & Communication Engineering.)
 
 ## Thanks
 
@@ -26,15 +26,15 @@ We thank **NSS College of Engineering, Palakkad** and various FOSS communities i
 | -------------------------------------------- | -------- | -------- | ---------------------------- |
 | Inauguration                                 | 10:30 AM | 11:30 AM | Prof. Nanda Kumar P, Dean UG |
 | Malayalam computing and brief intro to fonts | 11:50 AM | 1:00 PM  | Santhosh Thottigal           |
-| Privacy Yatra                                | 2:00 PM  | 3:00 PM  | Kannan V M                   |
+| Privacy Yathra                               | 2:00 PM  | 3:00 PM  | Kannan V M                   |
 | Frequently asked questions on free software  | 3:10 PM  | 4:10 PM  | Pirate Praveen               |
 
 | Day -2                                       | Start    | End      | Presenter       |
 | -------------------------------------------- | -------- | -------- | --------------- |
 | Increasing productivity using Emacs          | 9:10 AM  | 10:10 AM | Pirate Ambady   |
 | Introduction to WikiData                     | 10:30 AM | 11:30 AM | Ranjith Sanjeev |
-| Open Street Maos, Importance, Intro to Tools | 1:00 PM  | 2:00 PM  | Ark Arjun       |
-| Gaming on GNU/Linux                          | 3:00 PM  | 4:00 PM  | Akhil Varkey    |
+| Open Street Maps, Importance, Intro to Tools | 1:00 PM  | 2:00 PM  | Ark Arjun       |
+| Gaming in GNU/Linux                          | 3:00 PM  | 4:00 PM  | Akhil Varkey    |
 | Conclusion Ceremony                          | 4:00 PM  | 4:30 PM  | -               |
 
 <br/>
