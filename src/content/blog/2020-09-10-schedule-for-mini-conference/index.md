@@ -18,7 +18,7 @@ It has been a very long journey and we would like to celebrate this moment. We t
 
 ## Thanks
 
-We thank **NSS College of Engineering, Palakkad** and various FOSS communities including <a href="https://fsci.org.in/">**FSCI**</a> who stood by us for making this Cell a reality.<br/>&nbsp;&nbsp;Special thanks to <a href="https://www.gnome.org">**Gnome Foundation**</a> for providing us with a hosting platform. This program is not possible if not the for the works and help from many.
+We thank **NSS College of Engineering, Palakkad** and various FOSS communities including <a href="https://fsci.org.in/">**FSCI**</a> who stood by us for making this Cell a reality.<br/>&nbsp;&nbsp;Special thanks to <a href="https://www.gnome.org">**Gnome Foundation**</a> for providing us with the event hosting platform <a href="https://meet.gnome.org">(meet.gnome.org)</a>. This program is not possible if not the for the works and help from many.
 
 ## Schedule
 
