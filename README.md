@@ -85,5 +85,70 @@ Before helping us by pushing changes, make sure to not to break things 😜
 
 ## 🧐 What's inside?
 
+
+The src directory contains most of the functionality.
+This folder contains following directories in it: components  content  images  pages  styles  templates.
+
+
+
+1. All the pages used in this website are defined under src/pages dir. Namely 404.js  about.js  blog.js  events.js  index.js. Pages are created using Gatsby JSX style syntax.
+
+
+
+2. The components used in all the pages are defined under ```src/components``` dir.
+
+
+3. All the images including favicons and logos are listed under ```src/images``` dir.
+
+
+4. We have used scss as the css preprocessor. All the defined styles are defined under ```src/styles``` dir.
+
+
+5. Markdown posts for all the blogs and events are stored under ```src/content``` 
+  
   We still need to structure our project a little bit to showcase what is what....
   A little help, maybe 😊
+
+
+## 🤔 How do I add a post in blog or events?
+
+* To add a post in blog or events, create a directory in ```src/content/blog``` or in ```src/content/events``` respectively.
+
+* The created dir name should stick to the following convention
+```yyyy-mm-dd--postname```. <br>
+for eg: ```2020-01-25--test-post```
+
+* Create an index.md file to list down the post contents. All the related assets can be added to the dir that you just created.
+
+* All the posts created should have a frontmatter with the below syntax.
+
+For Blogs,
+
+```shell
+    path: /blog/test-post
+    date: "2019-11-05"
+    cover: "./coverimageforthepost.jpg"
+    tag: "tagsforthispost"
+    author: "authorusername"
+    name: "Author Name"
+    title: "A new face for PLUS."
+    desc: "A welcome post"
+```
+
+For events, 
+
+```shell
+    path: /events/testevent
+    date: "2020-01-1"
+    author: "authorusername"
+    title: "Test event"
+    cover: "./poster2.jpeg"
+```
+
+* This frotnmatter should be enclosed with three hyphens without spaces.
+
+* For more Gatsby MD syntax, visit [Gatsby Markdown Docs](https://www.gatsbyjs.org/docs/mdx/markdown-syntax/) 
+<br>
+
+
+The path should be unique. That is it should not conflict with already existing posts. Please refer to a post inside these dirs for more insights. If unclear, ask doubts in above listed communication methods.
