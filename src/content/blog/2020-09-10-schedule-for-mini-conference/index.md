@@ -12,6 +12,8 @@ desc: 'Event details for our first mini conference'
 
 # FOSSNSS 1st Anniversary
 
+> [Register Now 📝](https://ee.kobotoolbox.org/x/fDaTvLeE)
+
 It has been a very long journey and we would like to celebrate this moment. We the FOSS Cell NSSCE is organising a 2 day event to celebrate this milestone with various talks from renounced personalities form the FOSS community. The event will be inaugurated by **Prof. Nanda Kumar P**, Dean UG (Professor of Electronics & Communication Engineering.)
 
 ## Thanks
