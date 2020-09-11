@@ -24,20 +24,21 @@ We thank **NSS College of Engineering, Palakkad** and various FOSS communities i
 
 #### Date: 12th, 13th September 2020
 
-| Day -1                                       | Start    | End      | Presenter                    |
-| -------------------------------------------- | -------- | -------- | ---------------------------- |
-| Inauguration                                 | 10:30 AM | 11:30 AM | Prof. Nanda Kumar P, Dean UG |
-| Malayalam computing and brief intro to fonts | 11:50 AM | 1:00 PM  | Santhosh Thottigal           |
-| Privacy Yathra                               | 2:00 PM  | 3:00 PM  | Kannan V M                   |
-| Frequently asked questions on free software  | 3:10 PM  | 4:10 PM  | Pirate Praveen               |
+| Day -1                                       | Start    | End      | Presenter                    | Session Link                                             |
+| -------------------------------------------- | -------- | -------- | ---------------------------- | -------------------------------------------------------- |
+| Inauguration                                 | 10:30 AM | 11:30 AM | Prof. Nanda Kumar P, Dean UG | [Link to join](https://meet.gnome.org/b/fos-ktw-znr-uol) |
+| Malayalam computing and brief intro to fonts | 11:50 AM | 1:00 PM  | Santhosh Thottigal           | [Link to join](https://meet.gnome.org/b/fos-yru-vqf-9nu) |
+| Privacy Yathra                               | 2:00 PM  | 3:00 PM  | Kannan V M                   | [Link to join](https://meet.gnome.org/b/fos-4bm-cyo-gih) |
+| Frequently asked questions on free software  | 3:10 PM  | 4:10 PM  | Pirate Praveen               | [Link to join](https://meet.gnome.org/b/fos-tl0-hhx-xdb) |
 
-| Day -2                                       | Start    | End      | Presenter       |
-| -------------------------------------------- | -------- | -------- | --------------- |
-| Increasing productivity using Emacs          | 9:10 AM  | 10:10 AM | Pirate Ambady   |
-| Introduction to WikiData                     | 10:30 AM | 11:30 AM | Ranjith Sanjeev |
-| Open Street Maps, Importance, Intro to Tools | 1:00 PM  | 2:00 PM  | Ark Arjun       |
-| Gaming in GNU/Linux                          | 3:00 PM  | 4:00 PM  | Akhil Varkey    |
-| Conclusion Ceremony                          | 4:00 PM  | 4:30 PM  | -               |
+| Day -2                                       | Start    | End      | Presenter       | Session Link                                             |
+| -------------------------------------------- | -------- | -------- | --------------- | -------------------------------------------------------- |
+| Increasing productivity using Emacs          | 9:10 AM  | 10:10 AM | Pirate Ambady   | [Link to join](https://meet.gnome.org/b/fos-2ny-e4b-olf) |
+| Introduction to WikiData                     | 10:30 AM | 11:30 AM | Ranjith Sanjeev | [Link to join](https://meet.gnome.org/b/fos-tth-ayl-fih) |
+| Open Street Maps, Importance, Intro to Tools | 1:00 PM  | 2:00 PM  | Ark Arjun       | [Link to join](https://meet.gnome.org/b/fos-ypz-h73-p4g) |
+| Gaming in GNU/Linux                          | 3:00 PM  | 4:00 PM  | Akhil Varkey    | [Link to join](https://meet.gnome.org/b/fos-pji-ska-dvy) |
+| Conclusion Ceremony                          | 4:00 PM  | 4:30 PM  | -               | -                                                        |
+
 
 <br/>
 <p style="text-align: center"><em>Conference platform supported By:</em></p>
