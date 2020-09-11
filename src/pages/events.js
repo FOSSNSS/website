@@ -13,22 +13,38 @@ const EventPage = ({ data }) => (
         <SEO title='Events' />
         <Header />
         <div className='site-content'>
-            <div className="event-list">
-                <div className="blog-heading">
-                        <h1 class="underline-small">Latest Events</h1>
+            <div className='event-list'>
+                <div className='blog-heading'>
+                    <h1 class='underline-small'>Latest Events</h1>
                 </div>
                 <div className='event-container'>
                     {data.allMarkdownRemark.edges.map(post => (
-                        <Link to={post.node.frontmatter.path} key={post.node.id} className='link'>
+                        <Link
+                            to={post.node.frontmatter.path}
+                            key={post.node.id}
+                            className='link'>
                             <div key={post.node.id} className='event-card'>
                                 <Img
                                     style={{ height: '100%' }}
                                     fluid={
-                                        post.node.frontmatter.cover.childImageSharp.fluid
+                                        post.node.frontmatter.cover
+                                            .childImageSharp.fluid
                                     }
                                 />
-                                <h3>{post.node.frontmatter.title}</h3>
-                                <p><i class="fa fa-calendar-o colored-icon-ora" aria-hidden="true"></i> {post.node.frontmatter.datestring}</p>
+                                <h3>
+                                    {post.node.frontmatter.title.length > 25
+                                        ? `${post.node.frontmatter.title.slice(
+                                              0,
+                                              22
+                                          )}...`
+                                        : post.node.frontmatter.title}
+                                </h3>
+                                <p>
+                                    <i
+                                        class='fa fa-calendar-o colored-icon-ora'
+                                        aria-hidden='true'></i>{' '}
+                                    {post.node.frontmatter.datestring}
+                                </p>
                             </div>
                         </Link>
                     ))}
