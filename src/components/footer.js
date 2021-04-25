@@ -11,7 +11,7 @@ const Footer = () => (
                         <a href='/'>Home</a>
                     </li>
                     <li>
-                        <a href='https://forms.gle/sWCU2L2KYpGmTZzg8'>
+                        <a href='http://kutt.it/fossnss-membership' target='blank'>
                             Become a member
                         </a>
                     </li>
