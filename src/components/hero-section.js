@@ -27,7 +27,7 @@ export default () => (
                     <h1>Free and Open Source Software cell NSSCE</h1>
                     <br />
                     <a
-                        href='https://kutt.it/becomemember'
+                        href='http://kutt.it/fossnss-membership'  target='blank'
                         className='cta-btn lined thin'>
                         BECOME A MEMBER
                         </a>

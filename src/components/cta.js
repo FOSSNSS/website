@@ -7,7 +7,7 @@ const IndexPage = () => (
             <div className="cta1">
                 <h2>Join FOSSNSS now and be part of the community</h2>
                 <a
-                href='https://kutt.it/becomemember'
+                href='http://kutt.it/fossnss-membership' target='blank'
                 className='cta-btn lined thin bgcolor'>
                     JOIN NOW
                 </a>
