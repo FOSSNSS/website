@@ -1,4 +1,4 @@
-﻿# Code of Conduct
+# Code of Conduct
 
 The FOSSNSS (FOSS Cell) of NSS College of Engineering, Palakkad is a collective of students who like to explore and spread the open-source software and its ideology. Roots of this FOSS Cell dates back to the year 2009. The cell focusses on contributing to Free and Open-Source Software, advocating for free software and mentoring students to achieve excellence in various fields, leading the whole campus to the world of Freedom, Community and Free Software.
 
