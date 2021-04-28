@@ -1,3 +1,9 @@
+---
+title: "Code of Conduct"
+slug: "/codeofconduct"
+tag: "coc"
+---
+
 # Code of Conduct
 
 The FOSSNSS (FOSS Cell) of NSS College of Engineering, Palakkad is a collective of students who like to explore and spread the open-source software and its ideology. Roots of this FOSS Cell dates back to the year 2009. The cell focusses on contributing to Free and Open-Source Software, advocating for free software and mentoring students to achieve excellence in various fields, leading the whole campus to the world of Freedom, Community and Free Software.
@@ -16,10 +22,11 @@ The rules, guidelines, and code of conduct that follow apply to all the Core Mem
 * Age
 * Education
 * Ethnicity
-* Etc… will not be tolerated both inside and outside of the community.
-* Every member and non-member shall be recognised as equals and should be treated with respect and dignity.
 
-#Inclusive language
+will not be tolerated both inside and outside of the community.
+Every member and non-member shall be recognised as equals and should be treated with respect and dignity.
+
+## Inclusive language
 
 `	`Use inclusive and neutral languages whenever possible.
 
@@ -79,7 +86,7 @@ We expect all the members of our community to follow these codes of conducts and
 
 This is document is a result of collaborative work by the members of FOSSNSS from the following sources:
 
-https://fsci.org.in/code-of-conduct/#:~:text=FSCI%20-%20Code%20of%20Conduct%20%26%20Inclusion%20Policy&text=FSCI%20has%20adopted%20a%20code,of%20participants%20in%20any%20form
+https://fsci.org.in/code-of-conduct/
 
 https://ubuntu.com/community/code-of-conduct
 

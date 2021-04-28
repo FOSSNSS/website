@@ -9,44 +9,52 @@
 }
 
 .heading {
-    display: inline;
+    display:flex;
     font-size: 2em;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
-    margin-left: 2rem;
     margin-right: 0;
     font-weight: bold;
-    padding: .5rem;
-    padding-left: 1rem;
     padding-right: 1rem;
-    
 }
 
-
-.heading:hover
-    {
-      -moz-box-shadow: 0 0 15px #000;
-      -webkit-box-shadow: 0 0 10px #000;
-      box-shadow: 0 0 10px #000;
-    }
-
 .body {
-    display: inline;
     font-size: 1.2em;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
     margin-left: 2rem;
     margin-right: 0;
-    padding: .5rem;
+    padding: 0.5rem;
     line-height: 1.5;
-    background-color: antiquewhite;
-  }
-
-.body:hover{
-    background-color:blanchedalmond;
-    
 }
 
-.motoText{
+.body:hover {
+    -moz-box-shadow: 0 0 15px #000;
+    -webkit-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
+}
+
+.motoText {
     line-height: 2;
+    position: relative;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: rgb(175, 32, 13);
+    overflow: hidden;
+    background: linear-gradient(
+        to right,
+        rgb(241, 101, 82),
+        rgb(241, 101, 82),
+        rgb(175, 32, 13) 50%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+.motoText:hover {
+    background-position: 0 80%;
 }

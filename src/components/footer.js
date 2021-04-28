@@ -1,5 +1,7 @@
 // import { Link } from "gatsby"
 import React from 'react';
+import Link from 'gatsby-link';
+
 
 const Footer = () => (
     <footer>
@@ -21,7 +23,12 @@ const Footer = () => (
                         </a>
                     </li>
                     <li>
-                        <a href='/contact'>Contact Us</a>
+                    <Link to='/contact'>
+                            Contact us
+                    </Link>
+                    </li>
+                    <li>
+                        <Link to='/codeofconduct'> Code of Conduct </Link>
                     </li>
                 </ul>
             </div>
