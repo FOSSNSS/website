@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Link } from "gatsby"
 import * as aboutStyles from '../styles/about.module.scss';
+import { Link } from 'gatsby';
 
 import Header from '../components/header';
 import SEO from '../components/seo';
@@ -13,7 +14,12 @@ const SecondPage = () => (
         <div className='site-content'>
             <h1 className={aboutStyles.aboutHead}>About us</h1>
             <div className={aboutStyles.body}>
-                <h2 className={aboutStyles.heading}>Who we are <span role="img" aria-label="who we are">🤔</span></h2>
+                <h2 className={aboutStyles.heading}>
+                    Who we are{' '}
+                    <span role='img' aria-label='who we are'>
+                        🤔
+                    </span>
+                </h2>
                 <p>
                     The FOSSNSS (FOSS Cell) of NSS College of Engineering,
                     Palakkad is a collective of students who like to explore and
@@ -23,7 +29,6 @@ const SecondPage = () => (
                     for free software and mentoring students to achieve
                     excellence in various fields, leading the whole campus to
                     the world of Freedom, Community and Free Software. <br></br>
-                    
                     <br></br>
                     Our team has been constantly working for the promotion of
                     free and open source technology tools, develop software that
@@ -35,7 +40,10 @@ const SecondPage = () => (
             </div>
             <div className={aboutStyles.body}>
                 <h2 className={aboutStyles.heading}>
-                    Our Mission and Vision <span role="img" aria-label="mission">🎯</span>
+                    Our Mission and Vision{' '}
+                    <span role='img' aria-label='mission'>
+                        🎯
+                    </span>
                 </h2>
                 <ul>
                     <li>
@@ -66,10 +74,20 @@ const SecondPage = () => (
                         collective learning
                     </li>
                 </ul>
-                <span className={aboutStyles.motoText}> Free software, Free Campus, Free Society.</span>
-                        
+                <h3 className={aboutStyles.heading}>
+                    <span className={aboutStyles.motoText}>
+                        {' '}
+                        Free software, Free Campus, Free Society.
+                    </span>
+                </h3>
+                <div>
+                    <h5>
+                        See our <Link to='/codeofconduct'>CODE OF CONDUCT</Link>{' '}
+                    </h5>
+                </div>
             </div>
         </div>
+
         <Footer />
     </div>
 );

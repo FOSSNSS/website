@@ -12,8 +12,13 @@ module.exports = {
         `gatsby-plugin-sitemap`,
         `gatsby-plugin-react-helmet`,
         `gatsby-transformer-sharp`,
-        `gatsby-plugin-sass`,
         `gatsby-plugin-sharp`,
+        {
+            resolve: `gatsby-plugin-sass`,
+            options: {
+                implementation: require('node-sass'),
+            },
+        },
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
@@ -60,25 +65,25 @@ module.exports = {
                             linkImagesToOriginal: false,
                             tracedSVG: true,
                             showCaptions: true,
-                            markdownCaptions: true
+                            markdownCaptions: true,
                         },
                     },
                     {
                         resolve: `gatsby-remark-figure-caption`,
                         options: { figureClassName: 'md-figure' },
-                    }
+                    },
                 ],
             },
         },
         {
             resolve: `gatsby-plugin-nprogress`,
             options: {
-              // Setting a color is optional.
-              color: `tomato`,
-              // Disable the loading spinner.
-              showSpinner: false,
+                // Setting a color is optional.
+                color: `tomato`,
+                // Disable the loading spinner.
+                showSpinner: false,
             },
-        }
+        },
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         //  `gatsby-plugin-offline`, Disable during initial devloping
