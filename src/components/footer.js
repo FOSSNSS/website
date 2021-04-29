@@ -18,7 +18,7 @@ const Footer = () => (
                         </a>
                     </li>
                     <li>
-                        <a href='https://loomio.org'>
+                        <a href='https://codema.in/plus-fossnss/'>
                             Loomio Discussions Group
                         </a>
                     </li>
